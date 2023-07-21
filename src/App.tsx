@@ -1,9 +1,9 @@
-import { MonthlyCards } from "./components/MonthlyCards/MonthlyCards";
+import { DonateCard } from "./components/DonateCard/DonateCard";
 
 const App = () => {
   return (
     <>
-      <MonthlyCards />
+      <DonateCard />
     </>
   )
 }
