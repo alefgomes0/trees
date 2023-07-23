@@ -20,9 +20,11 @@ export const News = () => {
               <h5>O O O O O</h5>
             </div>
           </div>
-          <img src="https://source.unsplash.com/random" alt="" />
-          <figcaption className="text-sm opacity-75 mb-4">Turpis massa sed elementum tempus egestas.</figcaption>
-          <p className="text-lg leading-7 mb-4">
+          <img src="https://source.unsplash.com/random/1200x600" alt="" />
+          <figcaption className="text-sm opacity-75 mb-7">
+            Turpis massa sed elementum tempus egestas.
+          </figcaption>
+          <p className="text-lg leading-7 mb-7">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
             sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque
@@ -30,7 +32,7 @@ export const News = () => {
             pharetra. Scelerisque felis imperdiet proin fermentum leo vel orci
             porta non. Turpis cursus in hac habitasse platea dictumst.
           </p>
-          <p className="text-lg leading-7 mb-4">
+          <p className="text-lg leading-7 mb-7">
             Donec et odio pellentesque diam. Nibh venenatis cras sed felis eget
             velit. Leo duis ut diam quam nulla. Mattis ullamcorper velit sed
             ullamcorper morbi tincidunt ornare massa. Dictum fusce ut placerat
@@ -42,7 +44,13 @@ export const News = () => {
             hac habitasse. Tellus mauris a diam maecenas sed enim ut sem
             viverra.
           </p>
-          <p className="text-lg leading-7 mb-4">
+          <blockquote className="text-4xl border-l-4 border-l-red-500 leading-[50px] mb-7 pl-4">
+            "Leo vel orci porta non pulvinar. Tortor vitae purus faucibus ornare.
+            Sollicitudin ac orci phasellus egestas tellus rutrum. Amet tellus
+            cras adipiscing enim eu. Et malesuada fames ac turpis egestas.
+            Pharetra diam sit amet nisl suscipit adipiscing bibendum."
+          </blockquote>
+          <p className="text-lg leading-7 mb-7">
             Tellus in hac habitasse platea dictumst vestibulum rhoncus est
             pellentesque. Porttitor rhoncus dolor purus non enim praesent
             elementum facilisis. Sed nisi lacus sed viverra. Turpis massa sed
@@ -54,6 +62,7 @@ export const News = () => {
             in vitae turpis massa sed elementum. Orci eu lobortis elementum nibh
             tellus molestie. Vulputate ut pharetra sit amet aliquam.
           </p>
+          <button className="my-4 text-sm border-2 border-red-500 px-6 py-2">INFORM MISTAKE</button>
         </div>
       </article>
     </main>
