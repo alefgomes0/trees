@@ -6,7 +6,15 @@ export const News = () => {
           <h3 className="text-5xl font-semibold pb-6">
             Lorem ipsum dolor sit amet
           </h3>
-          <div className="grid grid-cols-2 grid-rows-2 gap-1 pb-6 items-center">
+          <h4 className="text-xl mb-14">
+            Etiam erat velit scelerisque in. Lorem ipsum dolor sit amet. Orci porta non pulvinar neque laoreet suspendisse.
+          </h4>
+          <img src="https://source.unsplash.com/random/1200x600" alt="" />
+          <figcaption className="text-sm opacity-75 pb-4">
+            Turpis massa sed elementum tempus egestas.
+          </figcaption>
+          <hr className="border-red-500 mb-10"/>
+          <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
             <h4>
               By{" "}
               <span className="text-sm font-semibold underline">
@@ -20,10 +28,6 @@ export const News = () => {
               <h5>O O O O O</h5>
             </div>
           </div>
-          <img src="https://source.unsplash.com/random/1200x600" alt="" />
-          <figcaption className="text-sm opacity-75 mb-7">
-            Turpis massa sed elementum tempus egestas.
-          </figcaption>
           <p className="text-lg leading-7 mb-7">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam

@@ -1,4 +1,4 @@
-import { News } from "./pages/News/news";
+import { News } from "./pages/News/News1.tsx";
 
 const App = () => {
   return (
