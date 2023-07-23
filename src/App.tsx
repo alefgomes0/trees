@@ -1,9 +1,9 @@
-import { News } from "./pages/News/News1.tsx";
+import { News2 } from "./pages/News/News2.tsx";
 
 const App = () => {
   return (
     <>
-      <News />
+      <News2 />
     </>
   )
 }
