@@ -1,0 +1,61 @@
+export const News = () => {
+  return (
+    <main>
+      <article className="grid grid-cols-12">
+        <div className="col-start-4 col-end-10 leading-7">
+          <h3 className="text-5xl font-semibold pb-6">
+            Lorem ipsum dolor sit amet
+          </h3>
+          <div className="grid grid-cols-2 grid-rows-2 gap-1 pb-6 items-center">
+            <h4>
+              By{" "}
+              <span className="text-sm font-semibold underline">
+                Aliquam Etiam
+              </span>
+            </h4>
+            <h5 className="row-start-2 text-xs opacity-80">
+              22/07/2023. Updated 22h42min
+            </h5>
+            <div className="social-media-icons flex row-start-2 justify-self-end">
+              <h5>O O O O O</h5>
+            </div>
+          </div>
+          <img src="https://source.unsplash.com/random" alt="" />
+          <figcaption className="text-sm opacity-75 mb-4">Turpis massa sed elementum tempus egestas.</figcaption>
+          <p className="text-lg leading-7 mb-4">
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
+            sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque
+            varius morbi enim. Eu augue ut lectus arcu bibendum at varius vel
+            pharetra. Scelerisque felis imperdiet proin fermentum leo vel orci
+            porta non. Turpis cursus in hac habitasse platea dictumst.
+          </p>
+          <p className="text-lg leading-7 mb-4">
+            Donec et odio pellentesque diam. Nibh venenatis cras sed felis eget
+            velit. Leo duis ut diam quam nulla. Mattis ullamcorper velit sed
+            ullamcorper morbi tincidunt ornare massa. Dictum fusce ut placerat
+            orci nulla pellentesque dignissim enim. Integer vitae justo eget
+            magna fermentum iaculis. In hac habitasse platea dictumst quisque.
+            Neque vitae tempus quam pellentesque. At augue eget arcu dictum.
+            Diam in arcu cursus euismod quis viverra nibh. Aliquam malesuada
+            bibendum arcu vitae elementum curabitur vitae. Sed viverra tellus in
+            hac habitasse. Tellus mauris a diam maecenas sed enim ut sem
+            viverra.
+          </p>
+          <p className="text-lg leading-7 mb-4">
+            Tellus in hac habitasse platea dictumst vestibulum rhoncus est
+            pellentesque. Porttitor rhoncus dolor purus non enim praesent
+            elementum facilisis. Sed nisi lacus sed viverra. Turpis massa sed
+            elementum tempus egestas. Dapibus ultrices in iaculis nunc sed.
+            Blandit volutpat maecenas volutpat blandit aliquam etiam erat.
+            Molestie a iaculis at erat. Sit amet aliquam id diam maecenas
+            ultricies mi. Varius quam quisque id diam vel quam elementum
+            pulvinar. Tincidunt eget nullam non nisi est sit amet. Quam id leo
+            in vitae turpis massa sed elementum. Orci eu lobortis elementum nibh
+            tellus molestie. Vulputate ut pharetra sit amet aliquam.
+          </p>
+        </div>
+      </article>
+    </main>
+  );
+};

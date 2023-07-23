@@ -1,9 +1,9 @@
-import { DonateCard } from "./components/DonateCard/DonateCard";
+import { News } from "./pages/News/news";
 
 const App = () => {
   return (
     <>
-      <DonateCard />
+      <News />
     </>
   )
 }
