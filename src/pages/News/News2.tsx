@@ -20,7 +20,7 @@ export const News2 = () => {
               <h4>
                 By{" "}
                 <span className="text-sm font-semibold underline">
-                  Aliquam Etiam
+                  Malesuada bibendum
                 </span>
               </h4>
               <h5 className="row-start-2 text-xs opacity-80">
