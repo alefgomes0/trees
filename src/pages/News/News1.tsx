@@ -1,3 +1,5 @@
+import { NotifyMistake } from "../../components/NotifyMistake/NotifyMistake";
+
 export const News1 = () => {
   return (
     <>
@@ -71,19 +73,12 @@ export const News1 = () => {
               nibh tellus molestie. Vulputate ut pharetra sit amet aliquam.
             </p>
             <div className="flex">
-              <button className="my-4 text-sm border-2 border-red-500 px-6 py-2">
-                INFORM MISTAKE
-              </button>
+              <NotifyMistake />
               <h5>O O O O O</h5>
             </div>
           </div>
         </article>
       </main>
-      <footer>
-      <div className="flex items-center h-20 bg-red-500">
-          <h4 className="text-white pl-4">gifdgjfdg - Github icon</h4>
-        </div>
-      </footer>
     </>
   );
 };
