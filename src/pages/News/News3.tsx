@@ -18,7 +18,7 @@ export const News3 = (props?: NewsProps) => {
             tellus orci ac auctor.
           </h4>
           <img src="https://picsum.photos/1200/600?random=1" alt="" />
-          <figcaption className="text-sm opacity-75 pb-4">
+          <figcaption className="text-sm opacity-75 pt-1 pb-4">
             Eget est lorem ipsum dolor sit.
           </figcaption>
           <hr className="border-red-500 mb-10" />
