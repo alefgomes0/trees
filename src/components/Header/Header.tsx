@@ -30,14 +30,14 @@ export const Header = () => {
         </div>
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
           <nav className="text-white flex justify-center gap-4 row-start-1 row-end-2 col-start-1 col-end-2 items-center">
-            <h5>Home</h5>
-            <h5>About</h5>
-            <h5>Contact</h5>
+            <h5 className="cursor-pointer">Home</h5>
+            <h5 className="cursor-pointer">About</h5>
+            <h5 className="cursor-pointer">Contact</h5>
           </nav>
           <div className="h-[30px] flex items-center justify-center gap-10 self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
             <input
               type="search"
-              className="text-white w-[200px] rounded-3xl bg-[#004d12] h-[30px] border-none focus:outline[#00144d] pl-4 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
+              className="text-white w-[200px] rounded-3xl bg-[#004d12] h-[30px] pl-4 border-none outline-none focus:outline-2 focus:outline-offset-0 focus:outline-sky-400 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
             />
           </div>
           <div className="row-start-1 row-end-2 col-start-1 col-end-2 self-end justify-self-end mr-16">
