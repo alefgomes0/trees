@@ -19,7 +19,7 @@ export const News2 = (props?: NewsProps) => {
           <figcaption className="text-sm opacity-75 pt-1 pb-4">
             Sollicitudin nibh sit amet commodo nulla facilisi nullam.
           </figcaption>
-          <hr className="border-red-500 mb-10" />
+          <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
             <h4>
               By{" "}

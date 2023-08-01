@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../../utilities/ScrollToTop";
+
 export const ArticlesContainer = () => {
   return (
-    <div className="grid grid-rows-[auto_1fr] grid-cols-1 ml-16 mt-32 mr-16 gap-16">
+    <div className="grid grid-rows-[auto_1fr] grid-cols-1 pl-16 pt-32 pr-16 pb-16 gap-16 text-[#031206] bg-[#e3ede6]">
       <h3 className="text-6xl">NEWS ABOUT US</h3>
       <div className="grid grid-cols-3 grid-rows-1 grid-start-2 grid-end-3 gap-8">
-        <div className="grid grid-rows-[1fr_auto_150px_auto] gap-4">
+        <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg"
             className="h-[300px] rounded"
@@ -18,8 +21,9 @@ export const ArticlesContainer = () => {
             Egestas sed sed risus pretium quam vulputate dignissim suspendisse
             in.
           </h6>
+          <Link to="news/1" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">READ MORE</button></Link>
         </div>
-        <div className="grid grid-rows-[1fr_auto_150px_auto] gap-4">
+        <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/nejc-soklic-XXp9RthTqCc-unsplash.jpg"
             className="h-[300px] rounded"
@@ -34,9 +38,10 @@ export const ArticlesContainer = () => {
             Nisi porta lorem mollis aliquam. Porttitor lacus luctus accumsan
             tortor posuere ac.
           </h6>
-          <button className="border-2 border-[#00851f] py-1 rounded">READ MORE</button>
+          <Link to="news/2" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">READ MORE</button></Link>
+          
         </div>
-        <div className="grid grid-rows-[1fr_auto_150px_auto] gap-4">
+        <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/fabian-jones-r_hgv8qEkwU-unsplash.jpg"
             className="h-[300px] rounded"
@@ -52,6 +57,8 @@ export const ArticlesContainer = () => {
             porttitor leo a diam. Mauris augue neque gravida in fermentum et
             sollicitudin ac. Ultrices gravida dictum fusce ut placerat.
           </h6>
+          
+          <Link to="news/3" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">READ MORE</button></Link>
         </div>
       </div>
     </div>

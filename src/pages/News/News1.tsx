@@ -1,12 +1,11 @@
 import { NotifyMistake } from "../../components/NotifyMistake/NotifyMistake";
-import { NewsProps } from "../../types/NewsProps";
 import { SocialMediaIcons } from "../../components/SocialMediaIcons/SocialMediaIcons";
 import { TopNews } from "../../components/TopNews/TopNews";
 
-export const News1 = (props?: NewsProps) => {
+export const News1 = () => {
   return (
     <>
-      <main className="grid grid-cols-12">
+      <main className="grid grid-cols-12 mt-32">
         <article className="col-start-4 col-end-9 leading-7">
           <h3 className="text-5xl font-semibold pb-6">
             Lorem ipsum dolor sit amet
@@ -19,7 +18,7 @@ export const News1 = (props?: NewsProps) => {
           <figcaption className="text-sm opacity-75 pt-1 pb-4">
             Turpis massa sed elementum tempus egestas.
           </figcaption>
-          <hr className="border-red-500 mb-10" />
+          <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
             <h4>
               By{" "}
@@ -54,7 +53,7 @@ export const News1 = (props?: NewsProps) => {
             hac habitasse. Tellus mauris a diam maecenas sed enim ut sem
             viverra.
           </p>
-          <blockquote className="text-4xl border-l-4 border-l-red-500 leading-[50px] mb-7 pl-4">
+          <blockquote className="text-4xl border-t-4 border-t-[#00851f] border-b-4 border-[#00851f] leading-[50px] mb-7 pt-2 pb-2">
             "Leo vel orci porta non pulvinar. Tortor vitae purus faucibus
             ornare. Sollicitudin ac orci phasellus egestas tellus rutrum. Amet
             tellus cras adipiscing enim eu. Et malesuada fames ac turpis
