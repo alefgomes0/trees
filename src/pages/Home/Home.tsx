@@ -1,9 +1,9 @@
-import { UnderHeader } from "../../components/UnderHeader/UnderHeader"
+import { Idk } from "../../components/Idk/Idk"
 
 export const Home = () => {
   return (
     <div>
-      <UnderHeader />
+      <Idk />
     </div>
   )
 }
