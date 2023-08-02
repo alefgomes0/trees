@@ -8,7 +8,7 @@ import { News2 } from "./pages/News/News2.tsx";
 
 const App = () => {
   return (
-    <div className="grid grid-rows-[120px_1fr_30px]">
+    <div className="grid grid-rows-[120px_1fr_30px] bg-[#e3ede6]">
       <BrowserRouter>
         <Header />
         <Routes>
