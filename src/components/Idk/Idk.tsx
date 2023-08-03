@@ -12,8 +12,8 @@ export const Idk = () => {
           and more frequent wildfires. But you can help to ease the problem. We
           work with people across the world to oppose the wrecking damages of
           wildfires. Your generosity will help us bring a{" "}
-          <span className="text-[#00851f] font-bold opacity-90">greener</span> future
-          for everyone.
+          <span className="text-[#00851f] font-bold opacity-90">greener</span>{" "}
+          future for everyone.
         </h4>
         <button className="text-[#dde9e0] w-[200px] h-auto py-2 bg-[#00851f] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
           JOIN TODAY

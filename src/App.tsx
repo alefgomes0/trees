@@ -5,6 +5,7 @@ import { Home } from "./pages/Home/Home.tsx";
 import { News1 } from "./pages/News/News1.tsx";
 import { News3 } from "./pages/News/News3.tsx";
 import { News2 } from "./pages/News/News2.tsx";
+import { DonateCard } from "./components/DonateCard/DonateCard.tsx";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/news/1" element={<News1 />} />
           <Route path="/news/2" element={<News2 />} />
           <Route path="/news/3" element={<News3 />} />
+          <Route path="/donate" element={<DonateCard />} />
         </Routes>
         <Footer />
       </BrowserRouter>

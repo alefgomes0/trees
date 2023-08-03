@@ -1,6 +1,6 @@
 export const OurMission = () => {
   return (
-    <div className="grid grid-rows-[auto_auto_1fr] gap-8 h-[calc(100vh-150px)] ml-16 mt-16">
+    <div className="grid grid-rows-[auto_auto_1fr] gap-8 h-[calc(100vh-150px)] pl-16 mt-16 bg-white">
       <h3>WE HAVE A MISSION</h3>
       <div>
         <h4>
