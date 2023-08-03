@@ -1,14 +1,13 @@
+import { ColoredSocialMediaIcons } from "../../components/ColoredSocialMediaIcons/ColoredSocialMediaIcons";
 import { NotifyMistake } from "../../components/NotifyMistake/NotifyMistake";
-import { NewsProps } from "../../types/NewsProps";
-import { SocialMediaIcons } from "../../components/SocialMediaIcons/SocialMediaIcons";
 import { TopNews } from "../../components/TopNews/TopNews";
 
-export const News3 = (props?: NewsProps) => {
+export const News3 = () => {
   return (
     <>
-      <main className="grid grid-cols-12">
-        <article className="col-start-4 col-end-9 leading-7">
-          <h3 className="text-5xl font-semibold pb-6">
+      <main className="grid grid-cols-12 mt-32 mb-32">
+        <article className="col-start-4 col-end-9 leading-7 font-IBMSansRegular">
+          <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic">
             Commodo nulla facilisi nullam vehicula accumsan lacus vel diam vel
             quam.
           </h3>
@@ -23,20 +22,20 @@ export const News3 = (props?: NewsProps) => {
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
-            <h4>
-              By{" "}
+            <h4 className="font-IBMMonoRegular">
+              BY{" "}
               <span className="text-sm font-semibold underline">
-                Felis Donec
+                FELIS DONEC
               </span>
             </h4>
-            <h5 className="row-start-2 text-xs opacity-80">
+            <h5 className="row-start-2 text-xs opacity-80 font-IBMMonoRegular">
               15/06/2023. Updated 14h07min
             </h5>
             <div className="social-media-icons flex row-start-2 justify-self-end">
-              <h5>O O O O O</h5>
+              <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             In hendrerit gravida rutrum quisque non. Sit amet luctus venenatis
             lectus. Sagittis nisl rhoncus mattis rhoncus urna. Velit dignissim
             sodales ut eu sem integer. Sollicitudin nibh sit amet commodo nulla
@@ -46,7 +45,7 @@ export const News3 = (props?: NewsProps) => {
             gravida arcu ac tortor dignissim convallis aenean et. Quis blandit
             turpis cursus in hac habitasse.
           </p>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Phasellus egestas tellus rutrum tellus pellentesque eu. Egestas
             tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. In
             ornare quam viverra orci sagittis. Neque volutpat ac tincidunt vitae
@@ -56,10 +55,10 @@ export const News3 = (props?: NewsProps) => {
             viverra. Accumsan sit amet nulla facilisi. Sed cras ornare arcu dui
             vivamus arcu.
           </p>
-          <h4 className="text-3xl mt-7 mb-7 font-semibold">
+          <h4 className="text-3xl mt-7 mb-7 font-IBMSerifBoldItalic">
             A erat nam at lectus urna duis convallis.
           </h4>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Nisi scelerisque eu ultrices vitae auctor eu augue ut. Nibh cras
             pulvinar mattis nunc sed blandit. A diam maecenas sed enim. Ut enim
             blandit volutpat maecenas volutpat blandit aliquam etiam. Platea
@@ -71,7 +70,7 @@ export const News3 = (props?: NewsProps) => {
               pulvinar etiam non quam lacus:
             </span>
           </p>
-          <ul className="text-lg flex flex-col gap-4 list-disc pl-5 mb-7">
+          <ul className="text-xl flex flex-col gap-4 list-disc pl-5 mb-7">
             <li>Justo donec enim diam vulputate ut pharetra.</li>
             <li>Ullamcorper a lacus vestibulum sed arcu non odio.</li>
             <li>
@@ -82,7 +81,7 @@ export const News3 = (props?: NewsProps) => {
               Ligula ullamcorper malesuada proin libero nunc consequat interdum.
             </li>
           </ul>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Lectus arcu bibendum at varius vel pharetra vel turpis nunc.
             Ultrices neque ornare aenean euismod elementum. Dui id ornare arcu
             odio ut sem nulla pharetra. Non sodales neque sodales ut etiam sit
@@ -92,10 +91,10 @@ export const News3 = (props?: NewsProps) => {
             vestibulum mattis ullamcorper velit. Cum sociis natoque penatibus et
             magnis.
           </p>
-          <h4 className="text-3xl mt-7 mb-7 font-semibold">
+          <h4 className="text-3xl mt-7 mb-7 font-IBMSerifBoldItalic">
             Magna fringilla urna porttitor rhoncus.
           </h4>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices.
             Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis
             a. Enim facilisis gravida neque convallis a cras semper. Eget arcu
@@ -104,7 +103,7 @@ export const News3 = (props?: NewsProps) => {
             Volutpat est velit egestas dui id ornare arcu odio. Sed sed risus
             pretium quam.
           </p>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Donec ac odio tempor orci dapibus ultrices. Integer quis auctor elit
             sed vulputate mi sit amet. Sollicitudin ac orci phasellus egestas
             tellus. Potenti nullam ac tortor vitae purus. Risus feugiat in ante
@@ -115,9 +114,10 @@ export const News3 = (props?: NewsProps) => {
             sociis natoque. Tortor dignissim convallis aenean et tortor at risus
             viverra adipiscing.
           </p>
-          <SocialMediaIcons>
+          <div className="flex item-center justify-between">
             <NotifyMistake />
-          </SocialMediaIcons>
+            <ColoredSocialMediaIcons />
+          </div>
         </article>
         <TopNews />
       </main>

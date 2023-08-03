@@ -1,14 +1,13 @@
 import { NotifyMistake } from "../../components/NotifyMistake/NotifyMistake";
-import { NewsProps } from "../../types/NewsProps";
-import { SocialMediaIcons } from "../../components/SocialMediaIcons/SocialMediaIcons";
 import { TopNews } from "../../components/TopNews/TopNews";
+import { ColoredSocialMediaIcons } from "../../components/ColoredSocialMediaIcons/ColoredSocialMediaIcons";
 
-export const News2 = (props?: NewsProps) => {
+export const News2 = () => {
   return (
     <>
-      <main className="grid grid-cols-12">
-        <article className="col-start-4 col-end-9 leading-7">
-          <h3 className="text-5xl font-semibold pb-6">
+      <main className="grid grid-cols-12 mt-32 mb-32">
+        <article className="col-start-4 col-end-9 leading-7 font-IBMSansRegular">
+          <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic">
             Viverra vitae congue eu consequat ac felis donec.
           </h3>
           <h4 className="text-xl mb-14">
@@ -21,20 +20,20 @@ export const News2 = (props?: NewsProps) => {
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
-            <h4>
-              By{" "}
-              <span className="text-sm font-semibold underline">
-                Malesuada bibendum
+            <h4 className="font-IBMMonoRegular">
+              BY{" "}
+              <span className="text-sm font-semibold underline font-IBMMonoRegular">
+                MALESUDA BIBENDUM
               </span>
             </h4>
-            <h5 className="row-start-2 text-xs opacity-80">
+            <h5 className="row-start-2 text-xs opacity-80 font-IBMMonoRegular">
               09/05/2023. Updated 11h31min
             </h5>
             <div className="social-media-icons flex row-start-2 justify-self-end">
-              <h5>O O O O O</h5>
+              <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
             sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque
@@ -42,7 +41,7 @@ export const News2 = (props?: NewsProps) => {
             pharetra. Scelerisque felis imperdiet proin fermentum leo vel orci
             porta non. Turpis cursus in hac habitasse platea dictumst.
           </p>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Donec et odio pellentesque diam. Nibh venenatis cras sed felis eget
             velit. Leo duis ut diam quam nulla. Mattis ullamcorper velit sed
             ullamcorper morbi tincidunt ornare massa. Dictum fusce ut placerat
@@ -58,7 +57,7 @@ export const News2 = (props?: NewsProps) => {
           <figcaption className="text-sm opacity-75 pt-1 pb-7">
             Eget mauris pharetra et ultrices neque ornare aenean euismod.
           </figcaption>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Lacus viverra vitae congue eu consequat ac felis donec. Vulputate ut
             pharetra sit amet aliquam id diam. Iaculis eu non diam phasellus
             vestibulum lorem. Est ante in nibh mauris cursus. Bibendum arcu
@@ -75,7 +74,7 @@ export const News2 = (props?: NewsProps) => {
           <figcaption className="text-sm opacity-75 pt-1 pb-7">
             Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
           </figcaption>
-          <p className="text-lg leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7">
             Non sodales neque sodales ut. Gravida rutrum quisque non tellus orci
             ac auctor augue mauris. Velit euismod in pellentesque massa.
             Ultrices mi tempus imperdiet nulla malesuada. Morbi quis commodo
@@ -88,9 +87,10 @@ export const News2 = (props?: NewsProps) => {
             fringilla ut morbi tincidunt augue. Ut porttitor leo a diam
             sollicitudin tempor.
           </p>
-          <SocialMediaIcons>
+          <div className="flex item-center justify-between">
             <NotifyMistake />
-          </SocialMediaIcons>
+            <ColoredSocialMediaIcons />
+          </div>
         </article>
         <TopNews />
       </main>

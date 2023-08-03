@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SocialMediaIcons } from "../SocialMediaIcons/SocialMediaIcons";
 
 export const Header = () => {
@@ -10,9 +11,11 @@ export const Header = () => {
               Donate
             </button>
           </div>
-          <h1 className="text-3xl text-white self-center justify-self-center row-start-1 row-end-2 col-start-1 col-end-2">
-            TREES
-          </h1>
+          <Link to="/" className="text-3xl text-white self-center justify-self-center row-start-1 row-end-2 col-start-1 col-end-2">
+            <h1>
+              TREES
+            </h1>
+          </Link>
           <div className="w-20 h-20 flex items-center justify-center self-end justify-self-end rows-1 row-start-1 row-end-2 col-start-1 col-end-2 mr-16 hover:bg-[#00751b] ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,11 +39,11 @@ export const Header = () => {
           </nav>
           <div className="h-[30px] flex items-center justify-center gap-10 self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
             <input
-              type="search"
+              type="text"
               className="text-white w-[200px] rounded-3xl bg-[#004d12] h-[30px] pl-4 border-none outline-none focus:outline-2 focus:outline-offset-0 focus:outline-sky-400 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
             />
           </div>
-          <div className="row-start-1 row-end-2 col-start-1 col-end-2 self-end justify-self-end mr-16">
+          <div className="grid justify-end row-start-1 row-end-2 col-start-1 col-end-2 pr-16 pointer-events-none">
             <SocialMediaIcons />
           </div>
         </div>

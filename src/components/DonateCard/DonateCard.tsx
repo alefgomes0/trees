@@ -1,9 +1,8 @@
-import {  useState } from "react";
+import { useState } from "react";
 
 export const DonateCard = () => {
   const [selectButton, setSelectButton] = useState(1);
   const [amount, setAmount] = useState(0);
-
 
   return (
     <div className="w-96 h-96 grid grid-cols-1 border-solid border-2 border-stone-400 px-2">
@@ -62,7 +61,11 @@ export const DonateCard = () => {
             <input
               type="number"
               className="border-none outline-none color-none bg-none"
-              onChange={(e) => Number(e.target.value) < 0 ? setAmount(0) : setAmount(Number(e.target.value))}
+              onChange={(e) =>
+                Number(e.target.value) < 0
+                  ? setAmount(0)
+                  : setAmount(Number(e.target.value))
+              }
               value={amount}
             />
             <span className="px-2">USD</span>
