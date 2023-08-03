@@ -6,7 +6,7 @@ export const News1 = () => {
   return (
     <>
       <main className="grid grid-cols-12 mt-32 mb-32">
-        <article className="col-start-4 col-end-9 leading-7 font-IBMSansRegular">
+        <article className="col-start-4 col-end-9 leading-7">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic">
             Lorem ipsum dolor sit amet
           </h3>
@@ -15,14 +15,14 @@ export const News1 = () => {
             porta non pulvinar neque laoreet suspendisse.
           </h4>
           <img src="https://source.unsplash.com/random/1200x600" alt="" />
-          <figcaption className="text-sm opacity-75 pt-1 pb-4">
+          <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
             Turpis massa sed elementum tempus egestas.
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
             <h4 className="font-IBMMonoSemibold">
               BY{" "}
-              <span className="text-sm font-semibold">
+              <span className="text-sm font-IBMMonoSemibold opacity-90">
                 ALIQUAM ETIAM
               </span>
             </h4>
@@ -33,7 +33,7 @@ export const News1 = () => {
               <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-xl leading-7 mb-7 font-IBMSansMedium">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
             sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque
@@ -53,7 +53,7 @@ export const News1 = () => {
             hac habitasse. Tellus mauris a diam maecenas sed enim ut sem
             viverra.
           </p>
-          <blockquote className="text-4xl border-t-4 border-t-[#00851f] border-b-4 border-[#00851f] leading-[50px] mb-7 pt-2 pb-2">
+          <blockquote className="text-4xl border-t-4 border-t-[#00851f] border-b-4 border-[#00851f] leading-[50px] mb-7 pt-2 pb-2 font-IBMSansLight">
             "Leo vel orci porta non pulvinar. Tortor vitae purus faucibus
             ornare. Sollicitudin ac orci phasellus egestas tellus rutrum. Amet
             tellus cras adipiscing enim eu. Et malesuada fames ac turpis

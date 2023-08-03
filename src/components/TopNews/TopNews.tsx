@@ -1,7 +1,7 @@
 export const TopNews = () => {
   return (
-    <div className="h-96 grid grid-cols-1 grid-rows-[auto_1fr_1fr_1fr_1fr]  col-start-10 col-end-12 mt-40 font-IBMSansRegular">
-      <h4 className="text-2xl font-semibold pb-6">TOP NEWS</h4>
+    <div className="h-96 grid grid-cols-1 grid-rows-[auto_1fr_1fr_1fr_1fr]  col-start-10 col-end-12 mt-40">
+      <h4 className="text-2xl font-IBMSerifMedium pb-6">TOP NEWS</h4>
       <div className="grid grid-cols-[auto_1fr] grid-rows-1 gap-2 overflow-clip border-b-2 border-500 pb-4 cursor-pointer hover:opacity-40">
         <div className="w-[60px] h-[60px]">
           <img

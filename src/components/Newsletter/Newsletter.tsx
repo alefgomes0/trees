@@ -3,7 +3,7 @@ export const Newsletter = () => {
     <div className="relative  h-[50svh] bg-[url('../../../images/azzedine-rouichi-ijdx54zvv28-unsplash.jpg')] bg-cover bg-center mb-16">
       <div className="grid items-center w-[100%] h-[100%] bg-black opacity-80 pl-16">
         <div className="grid grid-rows-[auto_auto_auto] grid-cols-1 gap-6">
-          <h4 className="text-4xl text-white">Sign our newsletter</h4>
+          <h4 className="text-4xl text-white font-IBMSerifMedium opacity-80">Sign our newsletter</h4>
           <div className="flex gap-4">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-white pb-1">Name</label>

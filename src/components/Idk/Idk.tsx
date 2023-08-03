@@ -6,7 +6,7 @@ export const Idk = () => {
         <h2 className="font-[#031206] text-5xl opacity-80 font-IBMSerifBold">
           More wildfires are ravaging the world — and they are getting worse
         </h2>
-        <h4 className="font-[#031206] text-lg leading-8 opacity-50 font-q">
+        <h4 className="font-[#031206] text-lg leading-8 opacity-50">
           With average global temperatures on the rise, local and seasonal
           variations mean that droughts and heatwaves are causing more severe
           and more frequent wildfires. But you can help to ease the problem. We

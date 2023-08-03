@@ -6,7 +6,7 @@ export const News2 = () => {
   return (
     <>
       <main className="grid grid-cols-12 mt-32 mb-32">
-        <article className="col-start-4 col-end-9 leading-7 font-IBMSansRegular">
+        <article className="col-start-4 col-end-9 leading-7 ">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic">
             Viverra vitae congue eu consequat ac felis donec.
           </h3>
@@ -15,14 +15,14 @@ export const News2 = () => {
             Porttitor massa id neque aliquam.
           </h4>
           <img src="https://picsum.photos/1200/600?random=1" alt="" />
-          <figcaption className="text-sm opacity-75 pt-1 pb-4">
+          <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
             Sollicitudin nibh sit amet commodo nulla facilisi nullam.
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
-            <h4 className="font-IBMMonoRegular">
+            <h4 className="font-IBMMonoSemibold">
               BY{" "}
-              <span className="text-sm font-semibold underline font-IBMMonoRegular">
+              <span className="text-sm">
                 MALESUDA BIBENDUM
               </span>
             </h4>
@@ -54,7 +54,7 @@ export const News2 = () => {
             viverra.
           </p>
           <img src="https://picsum.photos/1200/600?random=2" alt="" />
-          <figcaption className="text-sm opacity-75 pt-1 pb-7">
+          <figcaption className="text-sm opacity-75 pt-1 pb-7 font-IBMSansLight">
             Eget mauris pharetra et ultrices neque ornare aenean euismod.
           </figcaption>
           <p className="text-xl leading-7 mb-7">
@@ -71,7 +71,7 @@ export const News2 = () => {
             sed blandit libero volutpat sed cras ornare.
           </p>
           <img src="https://picsum.photos/1200/600?random=3" alt="" />
-          <figcaption className="text-sm opacity-75 pt-1 pb-7">
+          <figcaption className="text-sm opacity-75 pt-1 pb-7 font-IBMSansLight">
             Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
           </figcaption>
           <p className="text-xl leading-7 mb-7">

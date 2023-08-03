@@ -6,7 +6,7 @@ export const News3 = () => {
   return (
     <>
       <main className="grid grid-cols-12 mt-32 mb-32">
-        <article className="col-start-4 col-end-9 leading-7 font-IBMSansRegular">
+        <article className="col-start-4 col-end-9 leading-7">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic">
             Commodo nulla facilisi nullam vehicula accumsan lacus vel diam vel
             quam.
@@ -17,14 +17,14 @@ export const News3 = () => {
             tellus orci ac auctor.
           </h4>
           <img src="https://picsum.photos/1200/600?random=1" alt="" />
-          <figcaption className="text-sm opacity-75 pt-1 pb-4">
+          <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
             Eget est lorem ipsum dolor sit.
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
-            <h4 className="font-IBMMonoRegular">
+            <h4 className="font-IBMMonoSemibold">
               BY{" "}
-              <span className="text-sm font-semibold underline">
+              <span className="text-sm font-IBMMonoSemibold">
                 FELIS DONEC
               </span>
             </h4>
@@ -55,7 +55,7 @@ export const News3 = () => {
             viverra. Accumsan sit amet nulla facilisi. Sed cras ornare arcu dui
             vivamus arcu.
           </p>
-          <h4 className="text-3xl mt-7 mb-7 font-IBMSerifBoldItalic">
+          <h4 className="text-3xl mt-7 mb-7">
             A erat nam at lectus urna duis convallis.
           </h4>
           <p className="text-xl leading-7 mb-7">

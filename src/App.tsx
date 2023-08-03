@@ -9,7 +9,7 @@ import { DonateCard } from "./components/DonateCard/DonateCard.tsx";
 
 const App = () => {
   return (
-    <div className="grid grid-rows-[120px_1fr_30px] bg-[#e3ede6]">
+    <div className="grid grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium">
       <BrowserRouter>
         <Header />
         <Routes>

@@ -4,14 +4,14 @@ import { scrollToTop } from "../../utilities/ScrollToTop";
 export const ArticlesContainer = () => {
   return (
     <div className="grid grid-rows-[auto_1fr] grid-cols-1 pl-16 pt-32 pr-16 pb-16 gap-16 text-[#031206] bg-[#e3ede6]">
-      <h3 className="text-6xl">NEWS ABOUT US</h3>
+      <h3 className="text-6xl font-IBMSerifMedium opacity-90">NEWS ABOUT US</h3>
       <div className="grid grid-cols-3 grid-rows-1 grid-start-2 grid-end-3 gap-8">
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg"
             className="h-[300px] rounded"
           />
-          <h4 className="text-2xl font-semibold">
+          <h4 className="text-2xl font-IBMSerifMedium">
             Hac habitasse platea dictumst sagittis purus.
           </h4>
           <h6 className="opacity-70">
@@ -28,7 +28,7 @@ export const ArticlesContainer = () => {
             src="../../../images/nejc-soklic-XXp9RthTqCc-unsplash.jpg"
             className="h-[300px] rounded"
           />
-          <h4 className="text-2xl text-start font-semibold">
+          <h4 className="text-2xl text-start font-IBMSerifMedium">
             Nibh ipsum consequat nisl vel pretium nisi vitae suscipit
           </h4>
           <h6 className="opacity-70">
@@ -46,10 +46,10 @@ export const ArticlesContainer = () => {
             src="../../../images/fabian-jones-r_hgv8qEkwU-unsplash.jpg"
             className="h-[300px] rounded"
           />
-          <h4 className="text-2xl font-semibold">
+          <h4 className="text-2xl font-IBMSerifMedium">
             Tristique senectus et netus et malesuada fames ac turpis
           </h4>
-          <h6 className="opacity-70">
+          <h6 className="opacity-70 ">
             Dignissim convallis aenean et tortor at risus viverra adipiscing.
             Est velit egestas dui id ornare arcu odio. Eget nullam non nisi est.
             Nibh cras pulvinar mattis nunc sed. Sed risus ultricies tristique
