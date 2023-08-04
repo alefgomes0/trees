@@ -44,9 +44,23 @@
   }
 
   @font-face {
+    font-family: "IBMSerifLight";
+    src: url("../fonts/ibmplexserif-light-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexserif-light-webfont.woff") format("woff")
+  }
+
+
+  @font-face {
     font-family: "IBMSansLight";
     src: url("../fonts/ibmplexsans-light-webfont.woff2") format("woff2"),
       url("../fonts/ibmplexsans-light-webfont.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "IBMSansLightItalic";
+    font-style: italic;
+    src: url("../fonts/ibmplexsans-lightitalic-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexsans-lightitalic-webfont.woff") format("woff")
   }
 
   @font-face {

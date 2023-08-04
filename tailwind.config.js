@@ -11,13 +11,18 @@ export default {
         IBMSerifBoldItalic: "'IBMSerifBoldItalic'",
         IBMSerifMedium: "'IBMSerifMedium'",
         IBMSerifRegular: "'IBMSerifRegular'",
+        IBMSerifLight: "'IBMSerifLight'",
         IBMSerifSemiboldItalic: "'ibmplexserif-semibolditalic-webfont'",
         IBMSerifSemibold: "'IBMSerifSemibold'",
         IBMSansLight: "'IBMSansLight'",
+        IBMSansLightItalic: "'IBMSansLightItalic'",
         IBMSansRegular: "'IBMSansMedium'",
         IBMSansMedium: "'IBMSansRegular'",
         IBMMonoSemibold: "'IBMMonoSemibold'",
         IBMMonoRegular: "'IBMMonoRegular'",
+      },
+      colors: {
+        "gwhite": "#cddad0"
       }
     },
   },
