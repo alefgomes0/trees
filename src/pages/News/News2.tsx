@@ -14,7 +14,7 @@ export const News2 = () => {
             Eget egestas purus viverra accumsan in nisl nisi scelerisque eu.
             Porttitor massa id neque aliquam.
           </h4>
-          <img src="https://picsum.photos/1200/600?random=1" alt="" />
+          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=1" alt="" />
           <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
             Sollicitudin nibh sit amet commodo nulla facilisi nullam.
           </figcaption>
@@ -53,7 +53,7 @@ export const News2 = () => {
             hac habitasse. Tellus mauris a diam maecenas sed enim ut sem
             viverra.
           </p>
-          <img src="https://picsum.photos/1200/600?random=2" alt="" />
+          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=2" alt="" />
           <figcaption className="text-sm opacity-75 pt-1 pb-7 font-IBMSansLight">
             Eget mauris pharetra et ultrices neque ornare aenean euismod.
           </figcaption>
@@ -70,7 +70,7 @@ export const News2 = () => {
             Diam sollicitudin tempor id eu nisl nunc mi. Pulvinar mattis nunc
             sed blandit libero volutpat sed cras ornare.
           </p>
-          <img src="https://picsum.photos/1200/600?random=3" alt="" />
+          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=3" alt="" />
           <figcaption className="text-sm opacity-75 pt-1 pb-7 font-IBMSansLight">
             Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
           </figcaption>

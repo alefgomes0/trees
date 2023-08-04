@@ -6,66 +6,71 @@
   @font-face {
     font-family: "IBMSerifSemiboldItalic";
     font-style: italic;
-    src: url("../public/fonts/ibmplexserif-semibolditalic-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexserif-semibolditalic-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexserif-semibolditalic-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexserif-semibolditalic-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSerifBold";
-    font-style: italic;
-    src: url("../public/fonts/ibmplexserif-bold-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexserif-bold-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexserif-bold-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexserif-bold-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSerifBoldItalic";
     font-style: italic;
-    src: url("../public/fonts/ibmplexserif-bolditalic-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexserif-bolditalic-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexserif-bolditalic-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexserif-bolditalic-webfont.woff") format("woff")
+  }
+
+  @font-face {
+    font-family: "IBMSerifSemibold";
+    src: url("../fonts/ibmplexserif-semibold-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexserif-semibold-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSerifRegular";
     font-style: italic;
-    src: url("../public/fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexsans-regular-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexsans-regular-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSerifMedium";
     font-style: italic;
-    src: url("../public/fonts/ibmplexserif-medium-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexserif-medium-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexserif-medium-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexserif-medium-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSansLight";
-    src: url("../public/fonts/ibmplexsans-light-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexsans-light-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexsans-light-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexsans-light-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSansMedium";
-    src: url("../public/fonts/ibmplexsans-medium-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexsans-medium-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexsans-medium-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexsans-medium-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMSansRegular";
-    src: url("../public/fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexsans-regular-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexsans-regular-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexsans-regular-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMMonoSemibold";
     font-weight: semibold;
-    src: url("../public/fonts/ibmplexmono-semibold-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexmono-semibold-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexmono-semibold-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexmono-semibold-webfont.woff") format("woff")
   }
 
   @font-face {
     font-family: "IBMMonoRegular";
-    src: url("../public/fonts/ibmplexmono-regular-webfont.woff2") format("woff2"),
-      url("../public/fonts/ibmplexmono-regular-webfont.woff") format("woff")
+    src: url("../fonts/ibmplexmono-regular-webfont.woff2") format("woff2"),
+      url("../fonts/ibmplexmono-regular-webfont.woff") format("woff")
   }
 }

@@ -11,7 +11,7 @@ export const Header = () => {
               Donate
             </button>
           </div>
-          <Link to="/" className="text-3xl text-white self-center justify-self-center row-start-1 row-end-2 col-start-1 col-end-2 font-teste">
+          <Link to="/" className="text-3xl text-white self-center justify-self-center row-start-1 row-end-2 col-start-1 col-end-2 font-IBMSerifMedium">
             <h1>
               TREES
             </h1>
@@ -40,7 +40,7 @@ export const Header = () => {
           <div className="h-[30px] flex items-center justify-center gap-10 self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
             <input
               type="search"
-              className="text-white w-[200px] rounded-3xl bg-[#004d12] h-[30px] pl-4 border-none outline-none focus:outline-2 focus:outline-offset-0 focus:outline-sky-400 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
+              className="text-white text-sm w-[200px] rounded-3xl bg-[#004d12] h-[30px] pl-4 border-none outline-none focus:outline-2 focus:outline-offset-0 focus:outline-sky-400 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
             />
           </div>
           <div className="grid justify-end row-start-1 row-end-2 col-start-1 col-end-2 pr-16 pointer-events-none">

@@ -1,9 +1,9 @@
 export const Idk = () => {
   return (
     <div className="grid grid-cols-[auto_1fr] grid-rows-1 bg-[#e3ede6] gap-8 h-[calc(100vh-120px)] items-center">
-      <div className="col-start-1 col-end-2 w-[500px] h-[500px] ml-16 rounded-[50%] bg-[url('../../../images/undraw_nature_m5ll.png')] bg-cover bg-center"></div>
+      <div className="col-start-1 col-end-2 w-[500px] h-[500px] ml-16 rounded-[50%] bg-[url('../../../images/undraw_nature_m5ll.png')] bg-cover bg-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]"></div>
       <div className="flex flex-col mr-16  gap-6 self-start mt-[64px]">
-        <h2 className="font-[#031206] text-5xl opacity-80 font-IBMSerifBold">
+        <h2 className="font-[#031206] text-5xl opacity-75 font-IBMSerifMedium">
           More wildfires are ravaging the world — and they are getting worse
         </h2>
         <h4 className="font-[#031206] text-lg leading-8 opacity-50">

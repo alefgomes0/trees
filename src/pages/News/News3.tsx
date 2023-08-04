@@ -16,7 +16,7 @@ export const News3 = () => {
             ultrices vitae auctor. In hendrerit gravida rutrum quisque non
             tellus orci ac auctor.
           </h4>
-          <img src="https://picsum.photos/1200/600?random=1" alt="" />
+          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=1" alt="" />
           <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
             Eget est lorem ipsum dolor sit.
           </figcaption>

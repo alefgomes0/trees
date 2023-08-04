@@ -14,7 +14,7 @@ export const News1 = () => {
             Etiam erat velit scelerisque in. Lorem ipsum dolor sit amet. Orci
             porta non pulvinar neque laoreet suspendisse.
           </h4>
-          <img src="https://source.unsplash.com/random/1200x600" alt="" />
+          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://source.unsplash.com/random/1200x600" alt="" />
           <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
             Turpis massa sed elementum tempus egestas.
           </figcaption>

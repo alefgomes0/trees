@@ -1,6 +1,6 @@
 export const Newsletter = () => {
   return (
-    <div className="relative  h-[50svh] bg-[url('../../../images/azzedine-rouichi-ijdx54zvv28-unsplash.jpg')] bg-cover bg-center mb-16">
+    <div className="relative  h-[50svh] bg-[url('../../../images/azzedine-rouichi-ijdx54zvv28-unsplash.jpg')] bg-cover bg-center mb-16 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
       <div className="grid items-center w-[100%] h-[100%] bg-black opacity-80 pl-16">
         <div className="grid grid-rows-[auto_auto_auto] grid-cols-1 gap-6">
           <h4 className="text-4xl text-white font-IBMSerifMedium opacity-80">Sign our newsletter</h4>

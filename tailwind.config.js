@@ -12,6 +12,7 @@ export default {
         IBMSerifMedium: "'IBMSerifMedium'",
         IBMSerifRegular: "'IBMSerifRegular'",
         IBMSerifSemiboldItalic: "'ibmplexserif-semibolditalic-webfont'",
+        IBMSerifSemibold: "'IBMSerifSemibold'",
         IBMSansLight: "'IBMSansLight'",
         IBMSansRegular: "'IBMSansMedium'",
         IBMSansMedium: "'IBMSansRegular'",

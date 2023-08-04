@@ -9,7 +9,7 @@ export const ArticlesContainer = () => {
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg"
-            className="h-[300px] rounded"
+            className="h-[300px] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
           />
           <h4 className="text-2xl font-IBMSerifMedium">
             Hac habitasse platea dictumst sagittis purus.
@@ -26,7 +26,7 @@ export const ArticlesContainer = () => {
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/nejc-soklic-XXp9RthTqCc-unsplash.jpg"
-            className="h-[300px] rounded"
+            className="h-[300px] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
           />
           <h4 className="text-2xl text-start font-IBMSerifMedium">
             Nibh ipsum consequat nisl vel pretium nisi vitae suscipit
@@ -44,7 +44,7 @@ export const ArticlesContainer = () => {
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/fabian-jones-r_hgv8qEkwU-unsplash.jpg"
-            className="h-[300px] rounded"
+            className="h-[300px] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
           />
           <h4 className="text-2xl font-IBMSerifMedium">
             Tristique senectus et netus et malesuada fames ac turpis

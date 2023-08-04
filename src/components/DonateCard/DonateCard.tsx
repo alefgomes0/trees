@@ -1,13 +1,13 @@
 import { useState } from "react";
 
 export const DonateCard = () => {
-  const [selectButton, setSelectButton] = useState(1);
+  const [selectButton, setSelectButton] = useState(2);
   const [amount, setAmount] = useState(0);
 
   return (
-    <div className="w-96 h-96 grid grid-cols-1 border-solid border-2 border-stone-400 px-2">
-      <h4 className="text-center">Choose an amount to donate</h4>
-      <div className="grid grid-cols-[100px_minmax(100px,_1fr)_100px] gap-2">
+    <div className="w-96 h-96 grid grid-rows-[auto_1fr] grid-cols-1 border-solid border-2 border-stone-400 justify-self-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-[#f0fff3]">
+      <h4 className="text-center text-lg font-semibold opacity-80 bg-[#c4cfc7] h-auto py-4 mb-2">Choose an amount to donate</h4>
+      <div className="grid grid-cols-[100px_minmax(100px,_1fr)_100px] gap-2 px-4">
         <button
           className={`border-solid border-2 border-zinc-400 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.2)_inset] ${
             selectButton === 0
@@ -72,7 +72,7 @@ export const DonateCard = () => {
           </div>
         )}
       </div>
-      <button className="h-16 self-center border-solid bg-[#00851f] text-2xl text-[#e3ede6] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.2)_inset]">
+      <button className="h-auto self-center border-solid bg-[#00851f] text-3xl opacity-90 text-[#e3ede6] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.2)_inset] py-4 m-4">
         Donate
       </button>
     </div>
