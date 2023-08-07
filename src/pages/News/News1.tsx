@@ -33,7 +33,7 @@ export const News1 = () => {
               <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="text-xl leading-7 mb-7 font-IBMSansMedium">
+          <p className="first-line:uppercase first-line:tracking-wide first-line:font-IBMSerifSemibold text-xl leading-7 mb-7 font-IBMSansMedium">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
             sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque

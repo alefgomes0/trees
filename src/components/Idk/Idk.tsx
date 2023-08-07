@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { scrollToTop } from "../../utilities/ScrollToTop";
+
 export const Idk = () => {
   return (
     <div className="grid grid-cols-[auto_1fr] grid-rows-1 bg-[#e3ede6] gap-8 h-[calc(100vh-120px)] items-center">
@@ -15,9 +18,11 @@ export const Idk = () => {
           <span className="text-[#00851f] font-bold opacity-90">greener</span>{" "}
           future for everyone.
         </h4>
-        <button className="text-[#dde9e0] w-[200px] h-auto py-2 bg-[#00851f] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
-          JOIN TODAY
-        </button>
+        <Link to="/donate" onClick={scrollToTop}>
+          <button className="text-[#dde9e0] w-[200px] h-auto py-2 bg-[#00851f] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
+            JOIN TODAY
+          </button>
+        </Link>
       </div>
     </div>
   );

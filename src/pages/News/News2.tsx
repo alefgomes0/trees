@@ -33,7 +33,7 @@ export const News2 = () => {
               <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="text-xl leading-7 mb-7">
+          <p className="first-letter:text-5xl first-letter:mr-3 first-letter:float-left text-xl leading-7 mb-7">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
             sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque
