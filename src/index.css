@@ -88,3 +88,24 @@
       url("../fonts/ibmplexmono-regular-webfont.woff") format("woff")
   }
 }
+
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0%)
+  }
+
+  to {
+    transform: translateX(100%)
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%)
+  }
+
+  to {
+    transform: translateX(0)
+  }
+}
