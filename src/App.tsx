@@ -9,7 +9,7 @@ import { Donate } from "./pages/Donate/Donate.tsx"
 
 const App = () => {
   return (
-    <div className="grid grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium">
+    <div className="grid grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium overflow-hidden">
       <BrowserRouter>
         <Header />
         <Routes>
