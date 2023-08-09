@@ -91,6 +91,7 @@ export const OurMission = () => {
             alt="an upwards line chart"
             width={300}
             height={300}
+            showFullScreen={showFullscreen}
             close={handleOnClick}
           />
         )}

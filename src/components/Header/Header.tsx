@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import { scrollToTop } from "../../utilities/ScrollToTop";
 import { SocialMediaIcons } from "../SocialMediaIcons/SocialMediaIcons";
 import { Hamburger } from "../Hamburger/Hamburger";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const handleClick = () => {
+  const divRef = useRef<HTMLDivElement>(null!);
+  const svgRef = useRef<SVGSVGElement>(null!);
+  const handleClick = (e: React.MouseEvent | MouseEvent) => {
+    e.stopPropagation();
     setIsVisible(!isVisible);
   };
 
@@ -28,10 +31,15 @@ export const Header = () => {
             <h1>TREES</h1>
           </Link>
           <div
-            onClick={handleClick}
+            ref={divRef}
+            onClick={(e: React.MouseEvent | MouseEvent) => {
+              if (e.target === divRef.current || e.target === svgRef.current)
+                handleClick(e);
+            }}
             className="relative w-20 h-20 flex items-center justify-center self-end justify-self-end rows-1 row-start-1 row-end-2 col-start-1 col-end-2 mr-16 hover:bg-[#00751b] "
           >
             <svg
+              ref={svgRef}
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -43,12 +51,17 @@ export const Header = () => {
                 d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"
               />
             </svg>
-            <Hamburger isVisible={isVisible} />
+            <Hamburger
+              isVisible={isVisible}
+              handleClick={(e: React.MouseEvent | MouseEvent) => handleClick(e)}
+            />
           </div>
         </div>
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
           <nav className="text-white flex justify-center gap-4 row-start-1 row-end-2 col-start-1 col-end-2 items-center">
-            <h5 className="cursor-pointer">Home</h5>
+            <Link to="/">
+              <h5 className="cursor-pointer">Home</h5>
+            </Link>
             <Link to="/news/1">
               <h5 className="cursor-pointer">News</h5>
             </Link>

@@ -5,7 +5,7 @@ import { Home } from "./pages/Home/Home.tsx";
 import { News1 } from "./pages/News/News1.tsx";
 import { News3 } from "./pages/News/News3.tsx";
 import { News2 } from "./pages/News/News2.tsx";
-import { Donate } from "./pages/Donate/Donate.tsx"
+import { Donate } from "./pages/Donate/Donate.tsx";
 
 const App = () => {
   return (
@@ -13,13 +13,15 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />}/>
+          <Route path="/" element={<Home />} />
           <Route path="/news/1" element={<News1 />} />
           <Route path="/news/2" element={<News2 />} />
           <Route path="/news/3" element={<News3 />} />
           <Route path="/donate" element={<Donate />} />
         </Routes>
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </BrowserRouter>
     </div>
   );

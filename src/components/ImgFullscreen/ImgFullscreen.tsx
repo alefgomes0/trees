@@ -1,15 +1,35 @@
+import { useEffect, useRef } from "react";
+
 type ImgFullscreenProps = {
   path: string;
   alt: string;
   width: number;
   height: number;
+  showFullScreen: boolean;
   close: () => void;
 };
 
 export const ImgFullscreen = (props: ImgFullscreenProps) => {
+  const divRef = useRef<HTMLDivElement | null>(null);
+  const divRef2 = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const closeWhenClickOutside = (e: MouseEvent) => {
+      if (divRef.current?.contains(e.target as Node) && props.showFullScreen) {
+        if (!divRef2.current?.contains(e.target as Node)) props.close();
+      }
+    };
+
+    window.addEventListener("click", closeWhenClickOutside);
+    return () => window.removeEventListener("click", closeWhenClickOutside);
+  }, []);
+
   return (
-    <div className="w-[100vw] h-[100vh] z-21 bg-[#C9D9CD] opacity-90 fixed top-0 left-0 flex items-center justify-center">
-      <div className="relative">
+    <div
+      ref={divRef}
+      className="w-[100vw] h-[100vh] z-21 bg-[#C9D9CD] opacity-90 fixed top-0 left-0 flex items-center justify-center"
+    >
+      <div className="relative" ref={divRef2}>
         <img
           className={`w-[${props.width}px] h-[${props.height}px] z-25 opacity-100 bg-[#272b28] p-3 rounded`}
           key={props.path}

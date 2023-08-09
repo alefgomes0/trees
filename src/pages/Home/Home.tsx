@@ -6,12 +6,12 @@ import { WildfireCTA } from "../../components/WildfireCTA/WildfireCTA";
 
 export const Home = () => {
   return (
-    <div>
+    <main>
       <Idk />
       <OurMission />
       <WildfireCTA />
       <ArticlesContainer />
       <Newsletter />
-    </div>
+    </main>
   );
 };
