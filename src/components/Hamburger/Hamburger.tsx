@@ -5,15 +5,15 @@ type HamburgerProps = {
 export const Hamburger = (props: HamburgerProps) => {
   return (
     <div
-      className={`fixed z-20 opacity-90 top-0 right-0 grid grid-cols-1 grid-rows-1 h-[100svh] w-[50vw] bg-[#adc2b2]`}
+      className={`fixed z-20 opacity-[95%] top-0 right-0 grid grid-cols-1 grid-rows-1 h-[100svh] w-[50vw] bg-[#adc2b2]`}
       style={{
         transform: props.isVisible
           ? 'translateX(0%)'
           : 'translateX(100%)',
-        transition: 'transform 1s ease-in-out',
+        transition: 'transform 0.5s ease-in-out',
       }}
     >
-      <div className="flex flex-col mt-16 ml-16 gap-4 text-xl underline decoration-sky-400">
+      <div className="flex flex-col mt-16 ml-16 gap-4 text-3xl underline underline-offset-4 underline-sky-400 mb-4">
         <h4 className="cursor-pointer">Awesome link 1</h4>
         <h4 className="cursor-pointer">Awesome link 1</h4>
         <h4 className="cursor-pointer">Awesome link 1</h4>

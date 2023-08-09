@@ -25,11 +25,11 @@ export const ImgFullscreen = (props: ImgFullscreenProps) => {
           onClick={props.close}
         >
           <path
-            fill="currentColor"
+            fill="#272b28"
             d="m37.304 11.282l1.414 1.414l-26.022 26.02l-1.414-1.413z"
           />
           <path
-            fill="currentColor"
+            fill="#272b28"
             d="m12.696 11.282l26.022 26.02l-1.414 1.415l-26.022-26.02z"
           />
         </svg>
