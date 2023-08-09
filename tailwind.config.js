@@ -18,11 +18,13 @@ export default {
         IBMSansLightItalic: "'IBMSansLightItalic'",
         IBMSansRegular: "'IBMSansMedium'",
         IBMSansMedium: "'IBMSansRegular'",
+        IBMSansSemibold: "'IBMSansSemibold'",
         IBMMonoSemibold: "'IBMMonoSemibold'",
         IBMMonoRegular: "'IBMMonoRegular'",
       },
       colors: {
-        "gwhite": "#cddad0"
+        "gwhite": "#cddad0",
+        "gblack": "#031206",
       }
     },
   },

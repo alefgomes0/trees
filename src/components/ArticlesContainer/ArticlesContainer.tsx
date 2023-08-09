@@ -21,7 +21,7 @@ export const ArticlesContainer = () => {
             Egestas sed sed risus pretium quam vulputate dignissim suspendisse
             in.
           </h6>
-          <Link to="news/1" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">READ MORE</button></Link>
+          <Link to="news/1" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded ">READ MORE</button></Link>
         </div>
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
@@ -38,13 +38,13 @@ export const ArticlesContainer = () => {
             Nisi porta lorem mollis aliquam. Porttitor lacus luctus accumsan
             tortor posuere ac.
           </h6>
-          <Link to="news/2" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">READ MORE</button></Link>
+          <Link to="news/2" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded ">READ MORE</button></Link>
           
         </div>
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
             src="../../../images/fabian-jones-r_hgv8qEkwU-unsplash.jpg"
-            className="h-[300px] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
+            className="h-[300px] rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.2)"
           />
           <h4 className="text-2xl font-IBMSerifMedium">
             Tristique senectus et netus et malesuada fames ac turpis
@@ -58,7 +58,7 @@ export const ArticlesContainer = () => {
             sollicitudin ac. Ultrices gravida dictum fusce ut placerat.
           </h6>
           
-          <Link to="news/3" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">READ MORE</button></Link>
+          <Link to="news/3" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded ">READ MORE</button></Link>
         </div>
       </div>
     </div>
