@@ -7,7 +7,7 @@ export const News3 = () => {
     <>
       <main className="grid grid-cols-12 mt-32 mb-32">
         <article className="col-start-4 col-end-9 leading-7">
-          <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic">
+          <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic opacity-80">
             Commodo nulla facilisi nullam vehicula accumsan lacus vel diam vel
             quam.
           </h3>
@@ -22,7 +22,7 @@ export const News3 = () => {
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
-            <h4 className="font-IBMMonoSemibold">
+            <h4 className="font-IBMMonoSemibold opacity-90">
               BY{" "}
               <span className="text-sm font-IBMMonoSemibold">
                 FELIS DONEC

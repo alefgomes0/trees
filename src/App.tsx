@@ -6,6 +6,7 @@ import { News1 } from "./pages/News/News1.tsx";
 import { News3 } from "./pages/News/News3.tsx";
 import { News2 } from "./pages/News/News2.tsx";
 import { Donate } from "./pages/Donate/Donate.tsx";
+import { ArrowUp } from "./components/svg/ArrowUp.tsx";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/news/3" element={<News3 />} />
           <Route path="/donate" element={<Donate />} />
         </Routes>
+        <ArrowUp />
         <footer>
           <Footer />
         </footer>

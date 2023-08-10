@@ -33,12 +33,16 @@ export const Header = () => {
           <div
             ref={divRef}
             onClick={(e: React.MouseEvent | MouseEvent) => {
-              if (e.target === divRef.current || e.target === svgRef.current)
+              if (e.target === divRef.current )
                 handleClick(e);
             }}
-            className="relative w-20 h-20 flex items-center justify-center self-end justify-self-end rows-1 row-start-1 row-end-2 col-start-1 col-end-2 mr-16 hover:bg-[#00751b] "
+            className="relative w-20 h-20 flex items-center justify-center self-end justify-self-end rows-1 row-start-1 row-end-2 col-start-1 col-end-2 mr-16 hover:bg-[#00751b] cursor-pointer"
           >
             <svg
+              onClick={(e: React.MouseEvent | MouseEvent) => {
+                if (e.target === svgRef.current)
+                  handleClick(e);
+              }}
               ref={svgRef}
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -60,12 +64,12 @@ export const Header = () => {
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
           <nav className="text-white flex justify-center gap-4 row-start-1 row-end-2 col-start-1 col-end-2 items-center">
             <Link to="/">
-              <h5 className="cursor-pointer">Home</h5>
+              <h5 className="cursor-pointer hover:underline underline-offset-4 decoration-sky-400">Home</h5>
             </Link>
             <Link to="/news/1">
-              <h5 className="cursor-pointer">News</h5>
+              <h5 className="cursor-pointer hover:underline underline-offset-4 decoration-sky-400">News</h5>
             </Link>
-            <h5 className="cursor-pointer">About</h5>
+            <h5 className="cursor-pointer hover:underline underline-offset-4 decoration-sky-400">About</h5>
           </nav>
           <div className="h-[30px] text-sm self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
             <input

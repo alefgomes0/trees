@@ -39,7 +39,7 @@ export const OurMission = () => {
             <img
               src="../../../images/img2.png"
               alt="an upwards line chart"
-              className="w-[150px] h-[150px] rounded bg-[#8cc09b] p-3 cursor-pointer"
+              className="w-[150px] h-[150px] rounded bg-[#8cc09b] p-3 cursor-pointer shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
               key={0}
               onClick={() => {
                 setSelectImage(2);
@@ -56,7 +56,7 @@ export const OurMission = () => {
             <img
               src="../../../images/img3.png"
               alt="an upwards line chart"
-              className="w-[150px] h-[150px] rounded bg-[#8cc09b] p-3 cursor-pointer"
+              className="w-[150px] h-[150px] rounded bg-[#8cc09b] p-3 cursor-pointer shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
               key={1}
               onClick={() => {
                 setSelectImage(3);
@@ -72,7 +72,7 @@ export const OurMission = () => {
             <img
               src="../../../images/img4.png"
               alt="an upwards line chart"
-              className="w-[150px] h-[150px] rounded bg-[#8cc09b] p-3 cursor-pointer"
+              className="w-[150px] h-[150px] rounded bg-[#8cc09b] p-3 cursor-pointer shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]"
               key={2}
               onClick={() => {
                 setSelectImage(4);

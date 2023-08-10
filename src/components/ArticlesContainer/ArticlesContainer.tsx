@@ -21,7 +21,11 @@ export const ArticlesContainer = () => {
             Egestas sed sed risus pretium quam vulputate dignissim suspendisse
             in.
           </h6>
-          <Link to="news/1" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded ">READ MORE</button></Link>
+          <Link to="news/1" onClick={scrollToTop}>
+            <button className="w-[100%] border-2 border-[#00851f] py-1 rounded hover:bg-theme hover:text-gwhite hover:border-transparent transition-all">
+              READ MORE
+            </button>
+          </Link>
         </div>
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
@@ -38,8 +42,11 @@ export const ArticlesContainer = () => {
             Nisi porta lorem mollis aliquam. Porttitor lacus luctus accumsan
             tortor posuere ac.
           </h6>
-          <Link to="news/2" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded ">READ MORE</button></Link>
-          
+          <Link to="news/2" onClick={scrollToTop}>
+            <button className="w-[100%] border-2 border-[#00851f] py-1 rounded hover:bg-theme hover:text-gwhite hover:border-transparent transition-all">
+              READ MORE
+            </button>
+          </Link>
         </div>
         <div className="grid grid-rows-[1fr_auto_180px_auto] gap-4">
           <img
@@ -57,8 +64,12 @@ export const ArticlesContainer = () => {
             porttitor leo a diam. Mauris augue neque gravida in fermentum et
             sollicitudin ac. Ultrices gravida dictum fusce ut placerat.
           </h6>
-          
-          <Link to="news/3" onClick={scrollToTop}><button className="w-[100%] border-2 border-[#00851f] py-1 rounded ">READ MORE</button></Link>
+
+          <Link to="news/3" onClick={scrollToTop}>
+            <button className="w-[100%] border-2 border-[#00851f] py-1 rounded hover:bg-theme hover:text-gwhite hover:border-transparent transition-all">
+              READ MORE
+            </button>
+          </Link>
         </div>
       </div>
     </div>

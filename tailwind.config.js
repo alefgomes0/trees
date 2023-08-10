@@ -25,6 +25,7 @@ export default {
       colors: {
         "gwhite": "#cddad0",
         "gblack": "#031206",
+        "theme": "#00851f",
       }
     },
   },
