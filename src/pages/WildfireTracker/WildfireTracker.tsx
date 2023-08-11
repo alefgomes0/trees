@@ -9,7 +9,7 @@ export const WildfireTracker = () => {
         <h3 className="mb-4">
           Our Wildfire Tracker uses real data from the{" "}
           <a
-            href="https://data-nifc.opendata.arcgis.com/datasets/nifc::current-wildland-fire-incident-locations/explore?showTable=true"
+            href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/Satellite_VIIRS_Thermal_Hotspots_and_Fire_Activity/FeatureServer"
             target="_blank"
             className="underline decoration-cyan-700 underline-offset-4"
           >
@@ -26,59 +26,22 @@ export const WildfireTracker = () => {
         </h3>
         <form method="" action="">
           <label>
-            Select the number of number of wildfires you want to show:{" "}
+            Select the number of recent wildfires that you want to see:{" "}
           </label>
           <div className="flex items-center gap-8 mt-2">
-            <div className="flex flex-col items-center">
-              <input
-                type="radio"
-                value={5}
-                name="quantity"
-                onClick={() => setWildireQuantity(5)}
-                className="w-[15px] h-[15px]"
-              />
-              <label className="text-sm">5</label>
-            </div>
-            <div className="flex flex-col items-center">
-              <input
-                type="radio"
-                value={10}
-                name="quantity"
-                onClick={() => setWildireQuantity(10)}
-                className="w-[15px] h-[15px]"
-              />
-              <label className="text-sm">10</label>
-            </div>
-            <div className="flex flex-col items-center">
-              <input
-                type="radio"
-                value={25}
-                name="quantity"
-                onClick={() => setWildireQuantity(25)}
-                className="w-[15px] h-[15px]"
-              />
-              <label className="text-sm">25</label>
-            </div>
-            <div className="flex flex-col items-center">
-              <input
-                type="radio"
-                value={50}
-                name="quantity"
-                onClick={() => setWildireQuantity(50)}
-                className="w-[15px] h-[15px]"
-              />
-              <label className="text-sm">50</label>
-            </div>
-            <div className="flex flex-col items-center">
-              <input
-                type="radio"
-                value={100}
-                name="quantity"
-                onClick={() => setWildireQuantity(100)}
-                className="w-[15px] h-[15px]"
-              />
-              <label className="text-sm">100</label>
-            </div>
+            {[5, 10, 25, 50, 100].map((quantity) => (
+              <div className="flex flex-col items-center" key={quantity}>
+                <input
+                  type="radio"
+                  value={quantity}
+                  name="quantity"
+                  checked={wildfireQuantity === quantity}
+                  onChange={() => setWildireQuantity(quantity)}
+                  className="w-[15px] h-[15px]"
+                />
+                <label className="text-sm">{quantity}</label>
+              </div>
+            ))}
           </div>
         </form>
       </div>
