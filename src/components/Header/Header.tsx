@@ -19,7 +19,7 @@ export const Header = () => {
         <div className="w-[100%] h-[80px] grid grid-rows-[minmax(80px, 80px)] grid-cols-1 row-start-1 row-end-2 bg-[#00851f] justify-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
           <div className="h-20 flex items-center justify-center gap-10 self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
             <Link to="/donate" onClick={scrollToTop}>
-              <button className="text-white rounded-3xl w-[200px] py-1 bg-purple-900 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
+              <button className="text-gwhite rounded-3xl w-[200px] py-1 bg-purple-900 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
                 Donate
               </button>
             </Link>

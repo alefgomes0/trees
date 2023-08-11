@@ -4,7 +4,7 @@ import { Fire } from "../svg/Fire";
 
 type MarkersProps = {
   wildfireQuantity: number;
-  wildfireData: WildfireDataProps[] | null
+  wildfireData: WildfireDataProps[] | null;
 };
 
 export const Markers = (props: MarkersProps) => {
@@ -16,7 +16,6 @@ export const Markers = (props: MarkersProps) => {
             key={`${data.attributes.latitude}-${data.attributes.longitude}`}
             latitude={data.attributes.latitude}
             longitude={data.attributes.longitude}
-
           >
             <Fire />
           </Marker>
