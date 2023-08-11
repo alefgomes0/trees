@@ -2,8 +2,8 @@ export const Fire = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="128"
-      height="128"
+      width="20"
+      height="20"
       viewBox="0 0 128 128"
     >
       <radialGradient
@@ -14,9 +14,9 @@ export const Fire = () => {
         gradientTransform="matrix(-1 -.00434 -.00713 1.6408 131.986 -79.345)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".314" stop-color="#FF9800" />
-        <stop offset=".662" stop-color="#FF6D00" />
-        <stop offset=".972" stop-color="#F44336" />
+        <stop offset=".314" stopColor="#FF9800" />
+        <stop offset=".662" stopColor="#FF6D00" />
+        <stop offset=".972" stopColor="#F44336" />
       </radialGradient>
       <path
         fill="url(#notoFire0)"
@@ -30,15 +30,15 @@ export const Fire = () => {
         gradientTransform="matrix(-.0101 .9999 .7525 .0076 26.154 -11.267)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset=".214" stop-color="#FFF176" />
-        <stop offset=".328" stop-color="#FFF27D" />
-        <stop offset=".487" stop-color="#FFF48F" />
-        <stop offset=".672" stop-color="#FFF7AD" />
-        <stop offset=".793" stop-color="#FFF9C4" />
-        <stop offset=".822" stop-color="#FFF8BD" stop-opacity=".804" />
-        <stop offset=".863" stop-color="#FFF6AB" stop-opacity=".529" />
-        <stop offset=".91" stop-color="#FFF38D" stop-opacity=".209" />
-        <stop offset=".941" stop-color="#FFF176" stop-opacity="0" />
+        <stop offset=".214" stopColor="#FFF176" />
+        <stop offset=".328" stopColor="#FFF27D" />
+        <stop offset=".487" stopColor="#FFF48F" />
+        <stop offset=".672" stopColor="#FFF7AD" />
+        <stop offset=".793" stopColor="#FFF9C4" />
+        <stop offset=".822" stopColor="#FFF8BD" stopOpacity=".804" />
+        <stop offset=".863" stopColor="#FFF6AB" stopOpacity=".529" />
+        <stop offset=".91" stopColor="#FFF38D" stopOpacity=".209" />
+        <stop offset=".941" stopColor="#FFF176" stopOpacity="0" />
       </radialGradient>
       <path
         fill="url(#notoFire1)"

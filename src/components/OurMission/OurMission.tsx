@@ -12,7 +12,7 @@ export const OurMission = () => {
 
   return (
     <>
-      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-[2fr_3fr] bg-[#bddbc6] h-[calc(100vh-150px)] pl-16 mt-16 pr-16 font-gblack">
+      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-[2fr_3fr] gap-16 bg-[#bddbc6] h-[calc(100vh-150px)] pl-16 mt-16 pr-16 font-gblack">
         <div className="grid col-start-1 cold-end-2 mt-16 gap-1 ">
           <h3 className="font-IBMSerifMedium text-5xl font-gblack opacity-80">
             WE HAVE A MISSION

@@ -1,5 +1,6 @@
 import { Marker } from "react-map-gl";
 import { WildfireDataProps } from "../../types/WilfireDataProps";
+import { Fire } from "../svg/Fire";
 
 type MarkersProps = {
   wildfireQuantity: number;
@@ -15,8 +16,10 @@ export const Markers = (props: MarkersProps) => {
             key={`${data.attributes.latitude}-${data.attributes.longitude}`}
             latitude={data.attributes.latitude}
             longitude={data.attributes.longitude}
-            color="red"
-          />
+
+          >
+            <Fire />
+          </Marker>
         ))}
     </>
   );

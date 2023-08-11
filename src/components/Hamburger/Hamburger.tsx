@@ -20,11 +20,11 @@ export const Hamburger = (props: HamburgerProps) => {
   return (
     <div
       ref={divRef}
-      className={`fixed z-20 opacity-[95%] top-0 right-0 grid grid-cols-1 grid-rows-1 h-[100svh] w-[50vw] bg-[#adc2b2] ${
+      className={`fixed z-20 opacity-[95%] top-0 right-0 grid grid-cols-1 grid-rows-1 h-[100svh] w-[50vw] bg-gradient-to-b from-gray-100 to-gray-500 ${
         props.isVisible ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-500`}
     >
-      <div className="flex flex-col mt-16 ml-16 gap-4 text-2xl">
+      <div className="flex flex-col mt-16 ml-16 gap-4 text-xl opacity-90">
         <h3 className="mb-8 text-4xl text-gblack">External Links</h3>
         <h4 className="cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">Awesome link 1</h4>
         <h4 className="cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">Awesome link 2</h4>
