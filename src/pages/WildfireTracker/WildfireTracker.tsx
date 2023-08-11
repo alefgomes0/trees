@@ -51,8 +51,8 @@ export const WildfireTracker = () => {
   }, [wildfireQuantity]);
 
   return (
-    <div>
-      <div className="py-8 mx-16 text-xl">
+    <div className="bg-[#e3ede6] p-16">
+      <div className="py-8  text-xl">
         <h3 className="mb-4">
           Our{" "}
           <span className="font-[IBMSansSemibold] opacity-80">
@@ -107,10 +107,12 @@ export const WildfireTracker = () => {
           )}
         </form>
       </div>
-      <WorldMap
-        wildfireData={wildfireData}
-        wildfireQuantity={wildfireQuantity}
-      />
+      <div className="rounded border-4 border-[#a7beae]">
+        <WorldMap
+          wildfireData={wildfireData}
+          wildfireQuantity={wildfireQuantity}
+        />
+      </div>
     </div>
   );
 };
