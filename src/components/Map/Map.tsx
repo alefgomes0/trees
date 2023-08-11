@@ -3,7 +3,11 @@ import Map from "react-map-gl/maplibre";
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Markers } from '../Markers/Markers';
 
-export const WorldMap = () => {
+type WorldMapProps = {
+  wildfireQuantity: number
+}
+
+export const WorldMap = (props:WorldMapProps) => {
   return (
     <Map
       initialViewState={{
@@ -12,10 +16,10 @@ export const WorldMap = () => {
         zoom: 2,
       }}
       style={{ width: "100%", height: "80vw" }}
-      mapStyle="https://api.maptiler.com/maps/satellite/style.json?key=ZliihbZlV2InCpPBQDa1"
+      mapStyle="https://api.maptiler.com/maps/basic-v2/style.json?key=ZliihbZlV2InCpPBQDa1"
     >
       <NavigationControl position='top-right'/>
-      <Markers />
+      <Markers wildfireQuantity={props.wildfireQuantity}/>
     </Map>
   );
 };

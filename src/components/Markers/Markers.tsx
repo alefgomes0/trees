@@ -2,6 +2,10 @@ import { Marker } from "react-map-gl";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+type MarkersProps = {
+  wildfireQuantity: number;
+};
+
 type WildfireDataProps = {
   attributes: {
     latitude: number;
@@ -10,11 +14,10 @@ type WildfireDataProps = {
   };
 };
 
-export const Markers = () => {
+export const Markers = (props: MarkersProps) => {
   const [wildfireData, setWildfireData] = useState<WildfireDataProps[] | null>(
     null
   );
-  const dataset = 20;
 
   useEffect(() => {
     let ignore = false;
@@ -29,7 +32,7 @@ export const Markers = () => {
             returnGeometry: "false",
             outSR: "4326",
             f: "json",
-            resultRecordCount: dataset, // Set the maximum number of records
+            resultRecordCount: props.wildfireQuantity, // Set the maximum number of records
           },
           signal: AbortSignal.timeout(15000),
         }
@@ -48,7 +51,7 @@ export const Markers = () => {
     return () => {
       ignore = true;
     };
-  }, []);
+  }, [props.wildfireQuantity]);
 
   return (
     <>
