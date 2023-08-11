@@ -24,11 +24,12 @@ export const Hamburger = (props: HamburgerProps) => {
         props.isVisible ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-500`}
     >
-      <div className="flex flex-col mt-16 ml-16 gap-4 text-3xl underline underline-offset-4 underline-sky-400 mb-4">
-        <h4 className="cursor-pointer">Awesome link 1</h4>
-        <h4 className="cursor-pointer">Awesome link 2</h4>
-        <h4 className="cursor-pointer">Awesome link 3</h4>
-        <h4 className="cursor-pointer">Awesome link 4</h4>
+      <div className="flex flex-col mt-16 ml-16 gap-4 text-2xl">
+        <h3 className="mb-8 text-4xl text-gblack">External Links</h3>
+        <h4 className="cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">Awesome link 1</h4>
+        <h4 className="cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">Awesome link 2</h4>
+        <h4 className="cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">Awesome link 3</h4>
+        <h4 className="cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">Awesome link 4</h4>
       </div>
       <div className="absolute right-0 cursor-pointer opacity-50">
         <svg

@@ -1,4 +1,4 @@
-export type WildfireDataProps = {
+type WildfireDataProps = {
   attributes: {
     latitude: number;
     longitude: number;

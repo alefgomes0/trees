@@ -31,7 +31,6 @@ export const WildfireTracker = () => {
       )
       .then((res) => {
         if (!ignore) {
-          console.log(res.data.features);
           setWildfireData(res.data.features);
           setErrorMessage(null);
         }
@@ -44,8 +43,6 @@ export const WildfireTracker = () => {
           message: err.message,
           code: err.code,
         });
-        console.error(err);
-        console.log(wildfireData);
       });
 
     return () => {
@@ -84,22 +81,27 @@ export const WildfireTracker = () => {
           </label>
           <div className="flex items-center gap-8 mt-2">
             {[5, 10, 25, 50, 100].map((quantity) => (
-              <div className="flex flex-col items-center" key={quantity}>
+              <div className="grid justify-items-center" key={quantity}>
                 <input
+                  id="quantity"
                   type="radio"
                   value={quantity}
                   name="quantity"
                   checked={wildfireQuantity === quantity}
                   onChange={() => setWildireQuantity(quantity)}
-                  className="w-[15px] h-[15px]"
+                  className="cursor-pointer w-[15px] h-[15px] mb-1 shadow-[0_1px_0_0_rgba(0,0,0,0.1)_inset] appearance-none border-2 border-slate-400 rounded-[50%] transition-all relative hover:scale-110 checked-border-2 checked:border-[6px] checked:border-red-400 active:bg-white active:text-black active:outline-2 "
                 />
-                <label className="text-sm">{quantity}</label>
+                <label className="text-sm" htmlFor="quantity">
+                  {quantity}
+                </label>
               </div>
             ))}
           </div>
           {errorMessage && (
             <>
-              <h5 className="text-sm text-red-400 mt-4">There's was an error while processing your request.</h5>
+              <h5 className="text-sm text-red-400 mt-4">
+                There's was an error while processing your request.
+              </h5>
               <h5 className="text-sm text-red-400">{`${errorMessage.name}. ${errorMessage.message}. ${errorMessage.code}`}</h5>
             </>
           )}
