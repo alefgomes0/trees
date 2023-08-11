@@ -1,13 +1,67 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { WorldMap } from "../../components/Map/Map";
+import { WildfireDataProps } from "../../types/WilfireDataProps";
+import { BadRequest } from "../../types/BadRequestType";
 
 export const WildfireTracker = () => {
   const [wildfireQuantity, setWildireQuantity] = useState<number>(10);
+  const [errorMessage, setErrorMessage] = useState<BadRequest | null>(null);
+  const [wildfireData, setWildfireData] = useState<WildfireDataProps[] | null>(
+    null
+  );
+
+  useEffect(() => {
+    let ignore = false;
+
+    axios
+      .get(
+        "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Satellite_VIIRS_Thermal_Hotspots_and_Fire_Activity/FeatureServer/0/query",
+        {
+          params: {
+            where: "1=1",
+            outFields: "latitude,longitude,hours_old",
+            returnGeometry: "false",
+            outSR: "4326",
+            f: "json",
+            resultRecordCount: wildfireQuantity,
+          },
+          signal: AbortSignal.timeout(15000),
+        }
+      )
+      .then((res) => {
+        if (!ignore) {
+          console.log(res.data.features);
+          setWildfireData(res.data.features);
+          setErrorMessage(null);
+        }
+      })
+      .catch((err) => {
+        if (ignore) return;
+        setWildfireData(null);
+        setErrorMessage({
+          name: err.name,
+          message: err.message,
+          code: err.code,
+        });
+        console.error(err);
+        console.log(wildfireData);
+      });
+
+    return () => {
+      ignore = true;
+    };
+  }, [wildfireQuantity]);
+
   return (
     <div>
       <div className="py-8 mx-16 text-xl">
         <h3 className="mb-4">
-          Our Wildfire Tracker uses real data from the{" "}
+          Our{" "}
+          <span className="font-[IBMSansSemibold] opacity-80">
+            Wildfire Tracker
+          </span>{" "}
+          uses real data from the{" "}
           <a
             href="https://services9.arcgis.com/RHVPKKiFTONKtxq3/ArcGIS/rest/services/Satellite_VIIRS_Thermal_Hotspots_and_Fire_Activity/FeatureServer"
             target="_blank"
@@ -43,9 +97,18 @@ export const WildfireTracker = () => {
               </div>
             ))}
           </div>
+          {errorMessage && (
+            <>
+              <h5 className="text-sm text-red-400 mt-4">There's was an error while processing your request.</h5>
+              <h5 className="text-sm text-red-400">{`${errorMessage.name}. ${errorMessage.message}. ${errorMessage.code}`}</h5>
+            </>
+          )}
         </form>
       </div>
-      <WorldMap wildfireQuantity={wildfireQuantity} />
+      <WorldMap
+        wildfireData={wildfireData}
+        wildfireQuantity={wildfireQuantity}
+      />
     </div>
   );
 };

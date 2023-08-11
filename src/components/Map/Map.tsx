@@ -2,9 +2,11 @@ import { NavigationControl } from 'react-map-gl';
 import Map from "react-map-gl/maplibre";
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { Markers } from '../Markers/Markers';
+import { WildfireDataProps } from '../../types/WilfireDataProps';
 
 type WorldMapProps = {
   wildfireQuantity: number
+  wildfireData: WildfireDataProps[] | null
 }
 
 export const WorldMap = (props:WorldMapProps) => {
@@ -19,7 +21,7 @@ export const WorldMap = (props:WorldMapProps) => {
       mapStyle="https://api.maptiler.com/maps/basic-v2/style.json?key=ZliihbZlV2InCpPBQDa1"
     >
       <NavigationControl position='top-right'/>
-      <Markers wildfireQuantity={props.wildfireQuantity}/>
+      <Markers wildfireData={props.wildfireData} wildfireQuantity={props.wildfireQuantity}/>
     </Map>
   );
 };
