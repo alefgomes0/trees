@@ -7,6 +7,7 @@ import { News3 } from "./pages/News/News3.tsx";
 import { News2 } from "./pages/News/News2.tsx";
 import { Donate } from "./pages/Donate/Donate.tsx";
 import { ArrowUp } from "./components/svg/ArrowUp.tsx";
+import { WildfireTracker } from "./pages/WildfireTracker/WildfireTracker.tsx";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/news/2" element={<News2 />} />
           <Route path="/news/3" element={<News3 />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/wildfiretracker" element={<WildfireTracker />} /> 
         </Routes>
         <ArrowUp />
         <footer>
