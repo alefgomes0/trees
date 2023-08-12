@@ -14,9 +14,20 @@ export const News1 = () => {
             Etiam erat velit scelerisque in. Lorem ipsum dolor sit amet. Orci
             porta non pulvinar neque laoreet suspendisse.
           </h4>
-          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://source.unsplash.com/random/1200x600" alt="" />
+          <img
+            className="shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] rounded"
+            src="/images/sergei-a--heLWtuAN3c-unsplash.jpg"
+            alt="a forest with tall trees"
+          />
           <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
-            Turpis massa sed elementum tempus egestas.
+            Photo by{" "}
+            <a href="https://unsplash.com/pt-br/@sakulich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Sergei A
+            </a>{" "}
+            at{" "}
+            <a href="https://unsplash.com/pt-br/fotografias/-heLWtuAN3c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">

@@ -14,17 +14,25 @@ export const News2 = () => {
             Eget egestas purus viverra accumsan in nisl nisi scelerisque eu.
             Porttitor massa id neque aliquam.
           </h4>
-          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=1" alt="" />
+          <img
+            className="shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] rounded"
+            src="/images/joanne-francis-S9NQnIV4zOI-unsplash.jpg"
+            alt="a forest with a lot of fire smoke"
+          />
           <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
-            Sollicitudin nibh sit amet commodo nulla facilisi nullam.
+            Photo by{" "}
+            <a href="https://unsplash.com/pt-br/@nipawinnews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Joanne Francis
+            </a>{" "}
+            at{" "}
+            <a href="https://unsplash.com/pt-br/fotografias/S9NQnIV4zOI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
             <h4 className="font-IBMMonoSemibold opacity-90">
-              BY{" "}
-              <span className="text-sm">
-                MALESUDA BIBENDUM
-              </span>
+              BY <span className="text-sm">MALESUDA BIBENDUM</span>
             </h4>
             <h5 className="row-start-2 text-xs opacity-80 font-IBMMonoRegular">
               09/05/2023. Updated 11h31min
@@ -53,9 +61,20 @@ export const News2 = () => {
             hac habitasse. Tellus mauris a diam maecenas sed enim ut sem
             viverra.
           </p>
-          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=2" alt="" />
+          <img
+            className="shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] rounded"
+            src="/images/fabian-jones-r_hgv8qEkwU-unsplash.jpg"
+            alt="a firefighter at a wildfire"
+          />
           <figcaption className="text-sm opacity-75 pt-1 pb-7 font-IBMSansLight">
-            Eget mauris pharetra et ultrices neque ornare aenean euismod.
+            Photo by{" "}
+            <a href="https://unsplash.com/pt-br/@fjones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              fabian jones
+            </a>{" "}
+            at{" "}
+            <a href="https://unsplash.com/pt-br/fotografias/r_hgv8qEkwU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
           </figcaption>
           <p className="text-xl leading-7 mb-7">
             Lacus viverra vitae congue eu consequat ac felis donec. Vulputate ut
@@ -70,9 +89,20 @@ export const News2 = () => {
             Diam sollicitudin tempor id eu nisl nunc mi. Pulvinar mattis nunc
             sed blandit libero volutpat sed cras ornare.
           </p>
-          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=3" alt="" />
+          <img
+            className="shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] rounded"
+            src="/images/caleb-cook-syuox8fipX4-unsplash.jpg"
+            alt=""
+          />
           <figcaption className="text-sm opacity-75 pt-1 pb-7 font-IBMSansLight">
-            Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt.
+            Photo by{" "}
+            <a href="https://unsplash.com/pt-br/@venturecreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Caleb Cook
+            </a>{" "}
+            at{" "}
+            <a href="https://unsplash.com/pt-br/fotografias/syuox8fipX4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
           </figcaption>
           <p className="text-xl leading-7 mb-7">
             Non sodales neque sodales ut. Gravida rutrum quisque non tellus orci

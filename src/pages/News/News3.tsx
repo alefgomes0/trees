@@ -16,17 +16,26 @@ export const News3 = () => {
             ultrices vitae auctor. In hendrerit gravida rutrum quisque non
             tellus orci ac auctor.
           </h4>
-          <img className="shadow-[0_3px_3px_0_rgba(0,0,0,0.2)]" src="https://picsum.photos/1200/600?random=1" alt="" />
+          <img
+            className="shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] rounded"
+            src="/images/ross-stone-KWYTn9_QKRE-unsplash.jpg"
+            alt="a wildfire at california"
+          />
           <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
-            Eget est lorem ipsum dolor sit.
+            Photo by{" "}
+            <a href="https://unsplash.com/pt-br/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Ross Stone
+            </a>{" "}
+            at{" "}
+            <a href="https://unsplash.com/pt-br/fotografias/KWYTn9_QKRE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
           </figcaption>
           <hr className="border-[#00851f] mb-10" />
           <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
             <h4 className="font-IBMMonoSemibold opacity-90">
               BY{" "}
-              <span className="text-sm font-IBMMonoSemibold">
-                FELIS DONEC
-              </span>
+              <span className="text-sm font-IBMMonoSemibold">FELIS DONEC</span>
             </h4>
             <h5 className="row-start-2 text-xs opacity-80 font-IBMMonoRegular">
               15/06/2023. Updated 14h07min
