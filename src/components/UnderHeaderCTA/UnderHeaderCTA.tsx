@@ -10,7 +10,7 @@ export const UnderHeaderCTA = () => {
         and sustainable future for all.{" "}
       </h4>
       <Link to="/donate" onClick={scrollToTop}>
-        <button className="w-18  border-2 bg-[#00851f] border-none rounded-3xl py-1 px-12 shadow-[0_3px_3px_0_rgba(0,0,0,0.5)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.5)_inset]">
+        <button className="w-18  border-2 bg-[#00851f] border-none rounded py-1 px-12 shadow-[0_3px_3px_0_rgba(0,0,0,0.5)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.5)_inset]">
           MAKE A CHANGE
         </button>
       </Link>
