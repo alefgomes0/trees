@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type ImgFullscreenProps = {
   path: string;
@@ -10,13 +10,25 @@ type ImgFullscreenProps = {
 };
 
 export const ImgFullscreen = (props: ImgFullscreenProps) => {
-  const divRef = useRef<HTMLDivElement | null>(null);
-  const divRef2 = useRef<HTMLDivElement | null>(null);
+  const [animateClose, setAnimateClose] = useState(false);
+  const divRef = useRef<HTMLDivElement>(null!);
+  const divRef2 = useRef<HTMLDivElement>(null!);
+
+  const handleCloseAnimation = () => {
+    setAnimateClose(true);
+    setTimeout(() => {
+      props.close();
+    }, 400);
+  };
 
   useEffect(() => {
     const closeWhenClickOutside = (e: MouseEvent) => {
-      if (divRef.current?.contains(e.target as Node) && props.showFullScreen) {
-        if (!divRef2.current?.contains(e.target as Node)) props.close();
+      if (
+        divRef.current.contains(e.target as Node) &&
+        props.showFullScreen &&
+        !divRef2.current.contains(e.target as Node)
+      ) {
+        handleCloseAnimation();
       }
     };
 
@@ -25,14 +37,16 @@ export const ImgFullscreen = (props: ImgFullscreenProps) => {
   }, []);
 
   return (
-    <div className="w-full h-full fixed top-0 left-0 flex items-center justify-center">
+    <div
+      className={`w-full h-full fixed top-0 left-0 flex items-center justify-center ${
+        animateClose ? "scale-y-0" : ""
+      } transition-transform duration-300`}
+    >
       <div
         ref={divRef}
-        className="w-[100vw] h-[100vh] z-21 absolute top-0 left-0 grid items-center justify-center "
+        className="w-full h-full z-21 absolute top-0 left-0 grid items-center justify-center "
       >
-        <div
-          className="w-full h-full bg-[#C9D9CD] opacity-90 absolute top-0 left-0"
-        />
+        <div className="w-full h-full bg-[#C9D9CD] opacity-90 absolute top-0 left-0" />
         <div className="relative" ref={divRef2}>
           <img
             className={`w-[${props.width}px] h-[${props.height}px] top-50 z-25 opacity-100 bg-[#272b28] p-3 rounded`}
@@ -46,10 +60,16 @@ export const ImgFullscreen = (props: ImgFullscreenProps) => {
             height="50"
             viewBox="0 0 50 50"
             className="absolute top-0 right-0 translate-y-[-100%] translate-x-full cursor-pointer"
-            onClick={props.close}
+            onClick={handleCloseAnimation}
           >
-            <path fill="#272b28" d="m37.304 11.282l1.414 1.414l-26.022 26.02l-1.414-1.413z" />
-            <path fill="#272b28" d="m12.696 11.282l26.022 26.02l-1.414 1.415l-26.022-26.02z" />
+            <path
+              fill="#272b28"
+              d="m37.304 11.282l1.414 1.414l-26.022 26.02l-1.414-1.413z"
+            />
+            <path
+              fill="#272b28"
+              d="m12.696 11.282l26.022 26.02l-1.414 1.415l-26.022-26.02z"
+            />
           </svg>
         </div>
       </div>

@@ -30,10 +30,9 @@ export const WildfireTracker = () => {
         }
       )
       .then((res) => {
-        if (!ignore) {
-          setWildfireData(res.data.features);
-          setErrorMessage(null);
-        }
+        if (ignore) return;
+        setWildfireData(res.data.features);
+        setErrorMessage(null);
       })
       .catch((err) => {
         if (ignore) return;
@@ -89,7 +88,7 @@ export const WildfireTracker = () => {
                   name="quantity"
                   checked={wildfireQuantity === quantity}
                   onChange={() => setWildireQuantity(quantity)}
-                  className="cursor-pointer w-[15px] h-[15px] mb-1 shadow-[0_1px_0_0_rgba(0,0,0,0.1)_inset] appearance-none border-2 border-slate-400 rounded-[50%] transition-all relative hover:scale-110 checked-border-2 checked:border-[6px] checked:border-red-400 active:bg-white active:text-black active:outline-2 "
+                  className="cursor-pointer w-[25px] h-[25px] mb-1 shadow-[0_1px_0_0_rgba(0,0,0,0.1)_inset] appearance-none border-2 border-slate-400 rounded-[50%] transition-all relative hover:scale-110 checked-border-2 checked:border-[8px] checked:border-red-400 active:bg-white active:text-black active:outline-2 "
                 />
                 <label className="text-sm" htmlFor="quantity">
                   {quantity}
