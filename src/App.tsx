@@ -11,7 +11,7 @@ import { WildfireTracker } from "./pages/WildfireTracker/WildfireTracker.tsx";
 
 const App = () => {
   return (
-    <div className="grid grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium overflow-hidden">
+    <div className="grid grid-rows-[auto_1fr_30px] sm:grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium overflow-hidden">
       <BrowserRouter>
         <Header />
         <Routes>
