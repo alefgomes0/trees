@@ -16,10 +16,10 @@ export const Header = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="w-[100%] h-[80px] grid grid-rows-[minmax(80px, 80px)] grid-cols-1 row-start-1 row-end-2 bg-[#00851f] justify-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
-          <div className="h-20 flex items-center justify-center gap-10 self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
+        <div className="grid grid-rows-[minmax(60px,60px)] grid-cols-1 row-start-1 row-end-2 bg-[#00851f] items-center justify-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] px-2 sm:px-16">
+          <div className="flex items-center justify-center gap-10 justify-self-start row-start-1 row-end-2 col-start-1 col-end-2">
             <Link to="/donate" onClick={scrollToTop}>
-              <button className="text-gwhite rounded-3xl w-[200px] py-1 bg-purple-900 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
+              <button className="text-gwhite rounded-3xl  w-[80px] sm:w-[200px]  py-1 bg-purple-800 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]">
                 Donate
               </button>
             </Link>
@@ -35,7 +35,7 @@ export const Header = () => {
             onClick={(e: React.MouseEvent | MouseEvent) => {
               if (e.target === divRef.current) handleClick(e);
             }}
-            className="relative w-20 h-20 flex items-center justify-center self-end justify-self-end rows-1 row-start-1 row-end-2 col-start-1 col-end-2 mr-16 hover:bg-[#00751b] cursor-pointer"
+            className="relative flex justify-center  justify-self-end rows-1 row-start-1 row-end-2 col-start-1 col-end-2 hover:bg-[#00751b] cursor-pointer"
           >
             <svg
               onClick={(e: React.MouseEvent | MouseEvent) => {
@@ -59,7 +59,7 @@ export const Header = () => {
             />
           </div>
         </div>
-        <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]">
+        <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] p-2 sm:px-16">
           <nav className="text-white flex justify-center gap-4 row-start-1 row-end-2 col-start-1 col-end-2 items-center">
             <Link to="/">
               <h5 className="cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
@@ -77,17 +77,15 @@ export const Header = () => {
               </h5>
             </Link>
           </nav>
-          <div className="h-[30px] text-sm self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2 ml-16">
+          <div className="h-[30px] text-sm self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2">
             <input
               type="search"
-              className="text-white text-sm w-[200px] rounded-3xl bg-[#004d12] h-[30px] pl-10 border-none outline-none focus:outline-2 focus:outline-offset-0 focus:outline-sky-400 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
+              className="text-white text-sm w-[80px] sm:w-[200px] rounded-3xl bg-[#004d12] h-[30px] pl-10 border-none outline-none focus:outline-2 focus:outline-offset-0 focus:outline-sky-400 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)_inset]"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
-              className="translate-y-[-110%] translate-x-1/2"
+              className="w-4 h-4 sm:w-[24px] sm:h-[24px] translate-y-[-140%] translate-y-[-110%] translate-x-1/2"
             >
               <path
                 fill="#adc2b2"
@@ -95,7 +93,7 @@ export const Header = () => {
               />
             </svg>
           </div>
-          <div className="grid justify-end row-start-1 row-end-2 col-start-1 col-end-2 pr-16 pointer-events-none">
+          <div className="grid justify-end row-start-1 row-end-2 col-start-1 col-end-2 pointer-events-none">
             <SocialMediaIcons />
           </div>
         </div>
