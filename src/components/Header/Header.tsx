@@ -4,10 +4,11 @@ import { SocialMediaIcons } from "../SocialMediaIcons/SocialMediaIcons";
 import { Hamburger } from "../Hamburger/Hamburger";
 import { useState, useRef } from "react";
 import { SearchIcon } from "../svg/SearchIcon";
+import { getWindowSize } from "../context/WindowSizeContext";
 
 export const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+  const { isMobile } = getWindowSize();
   const divRef = useRef<HTMLDivElement>(null!);
   const svgRef = useRef<SVGSVGElement>(null!);
   const handleClick = (e: React.MouseEvent | MouseEvent) => {
@@ -64,7 +65,7 @@ export const Header = () => {
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] p-2 sm:px-16">
           <div className="h-[30px] text-sm self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2">
             {isMobile ? (
-              <div className="flex items-center h-full pl-2">
+              <div className="flex items-center h-full">
                 <SocialMediaIcons />
               </div>
             ) : (

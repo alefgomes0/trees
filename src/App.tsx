@@ -9,40 +9,29 @@ import { News2 } from "./pages/News/News2.tsx";
 import { Donate } from "./pages/Donate/Donate.tsx";
 import { ArrowUp } from "./components/svg/ArrowUp.tsx";
 import { WildfireTracker } from "./pages/WildfireTracker/WildfireTracker.tsx";
+import { WindowSizeProvider } from "./components/context/WindowSizeContext.tsx";
 
 const App = () => {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 820);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth > 820);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div className="grid grid-rows-[auto_1fr_30px] sm:grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium overflow-hidden">
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/news/1" element={<News1 />} />
-          <Route path="/news/2" element={<News2 />} />
-          <Route path="/news/3" element={<News3 />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/wildfiretracker" element={<WildfireTracker />} />
-        </Routes>
-        <ArrowUp />
-        <footer>
-          <Footer />
-        </footer>
-      </BrowserRouter>
-    </div>
+    <WindowSizeProvider>
+      <div className="grid grid-rows-[auto_1fr_30px] sm:grid-rows-[120px_1fr_30px] bg-[#e3ede6] font-IBMSansMedium overflow-hidden">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/news/1" element={<News1 />} />
+            <Route path="/news/2" element={<News2 />} />
+            <Route path="/news/3" element={<News3 />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/wildfiretracker" element={<WildfireTracker />} />
+          </Routes>
+          <ArrowUp />
+          <footer>
+            <Footer />
+          </footer>
+        </BrowserRouter>
+      </div>
+    </WindowSizeProvider>
   );
 };
 

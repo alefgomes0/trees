@@ -5,8 +5,8 @@ import { SmallPlant } from "../svg/SmallPlant";
 
 export const DonationBenefits = () => {
   return (
-    <div className="grid grid-rows-1 grid-cols-3 font-IBMSansLight gap-16">
-      <div className="rounded text-gwhite w-64 h-96 grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10%  to-[rgba(50,88,98,1)] to-90%">
+    <div className="grid grid-rows-3 sm:grid-rows-1 grid-cols-1 sm:grid-cols-3 font-IBMSansLight gap-6 sm:gap-16 w-screen px-2 sm:px-16">
+      <div className="rounded text-gwhite w-full sm:w-64 sm:h-96 grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10%  to-[rgba(50,88,98,1)] to-90%">
         <div className="grid grid-rows-2">
           <div className="flex items-center gap-2">
             <h4 className="text-4xl font-IBMSerifLight">Pro</h4>
@@ -37,7 +37,7 @@ export const DonationBenefits = () => {
           </div>
         </div>
       </div>
-      <div className="relative rounded text-gwhite w-64 h-96 grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10%  to-[rgba(50,88,98,1)] to-90%">
+      <div className="relative rounded text-gwhite w-full grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10%  to-[rgba(50,88,98,1)] to-90%">
         <div className="grid  grid-rows-2">
           <div className="flex items-center">
             <h4 className="text-4xl font-IBMSerifLight">Master</h4>
@@ -74,7 +74,7 @@ export const DonationBenefits = () => {
           </div>
         </div>
       </div>
-      <div className="rounded text-gwhite w-64 h-96 grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10%  to-[rgba(50,88,98,1)] to-90%">
+      <div className="rounded text-gwhite w-full grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10%  to-[rgba(50,88,98,1)] to-90%">
         <div className="grid grid-rows-2">
           <div className="flex items-center gap-2">
             <h4 className="text-4xl font-IBMSerifLight">Ultra</h4>
