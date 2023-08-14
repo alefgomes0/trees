@@ -3,7 +3,7 @@ import { scrollToTop } from "../../utilities/ScrollToTop";
 
 export const TopNews = () => {
   return (
-    <div className="h-96 grid grid-cols-1 grid-rows-[auto_1fr_1fr_1fr_1fr]  col-start-10 col-end-12 mt-40">
+    <div className="h-max sm:h-96 grid grid-cols-1 grid-rows-[auto_1fr_1fr_1fr_1fr] sm:col-start-10 sm:col-end-12 mt-6 sm:mt-40">
       <h4 className="text-2xl font-IBMSerifMedium pb-6">TOP NEWS</h4>
       <Link to="/news/2" onClick={scrollToTop}>
         <div className="grid grid-cols-[auto_1fr] grid-rows-1 gap-2 overflow-clip border-b-2 border-500 pb-4 cursor-pointer hover:opacity-40">

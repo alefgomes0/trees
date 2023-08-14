@@ -5,7 +5,7 @@ export const Footer = () => {
         className="flex items-center h-[30px] bg-[#00851f] row-start-3 row-end-4 gap-2
       "
       >
-        <h4 className="text-sm text-white pl-16">Alexandre Figueiredo Gomes</h4>
+        <h4 className="text-sm text-white pl-2 sm:pl-16">Alexandre Figueiredo Gomes</h4>
         <a href="https://github.com/alefgomes0" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -5,8 +5,8 @@ import { ColoredSocialMediaIcons } from "../../components/ColoredSocialMediaIcon
 export const News2 = () => {
   return (
     <>
-      <main className="grid grid-cols-12 mt-32 mb-32">
-        <article className="col-start-4 col-end-9 leading-7 ">
+      <main className="grid grid-rows-[1fr_auto] sm:grid-rows-1 sm:grid-cols-12 mt-8 sm:mt-32 mb-8 sm:mb-32 px-2 sm:px-0">
+        <article className="sm:col-start-4 sm:col-end-9 leading-7 ">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic opacity-80">
             Viverra vitae congue eu consequat ac felis donec.
           </h3>
@@ -41,7 +41,7 @@ export const News2 = () => {
               <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="first-letter:text-5xl first-letter:mr-3 first-letter:float-left text-xl leading-7 mb-7">
+          <p className="first-letter:text-5xl first-letter:mr-3 first-letter:float-left text-lg sm:text-xl leading-7 mb-7">
             Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Arcu odio ut sem nulla pharetra diam
             sit amet nisl. Adipiscing at in tellus integer feugiat scelerisque
@@ -49,7 +49,7 @@ export const News2 = () => {
             pharetra. Scelerisque felis imperdiet proin fermentum leo vel orci
             porta non. Turpis cursus in hac habitasse platea dictumst.
           </p>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Donec et odio pellentesque diam. Nibh venenatis cras sed felis eget
             velit. Leo duis ut diam quam nulla. Mattis ullamcorper velit sed
             ullamcorper morbi tincidunt ornare massa. Dictum fusce ut placerat
@@ -76,7 +76,7 @@ export const News2 = () => {
               Unsplash
             </a>
           </figcaption>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Lacus viverra vitae congue eu consequat ac felis donec. Vulputate ut
             pharetra sit amet aliquam id diam. Iaculis eu non diam phasellus
             vestibulum lorem. Est ante in nibh mauris cursus. Bibendum arcu
@@ -104,7 +104,7 @@ export const News2 = () => {
               Unsplash
             </a>
           </figcaption>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Non sodales neque sodales ut. Gravida rutrum quisque non tellus orci
             ac auctor augue mauris. Velit euismod in pellentesque massa.
             Ultrices mi tempus imperdiet nulla malesuada. Morbi quis commodo

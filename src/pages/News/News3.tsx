@@ -5,8 +5,8 @@ import { TopNews } from "../../components/TopNews/TopNews";
 export const News3 = () => {
   return (
     <>
-      <main className="grid grid-cols-12 mt-32 mb-32">
-        <article className="col-start-4 col-end-9 leading-7">
+      <main className="grid grid-rows-[1fr_auto] sm:grid-rows-1 sm:grid-cols-12 mt-8 sm:mt-32 mb-8 sm:mb-32 px-2 sm:px-0">
+        <article className="sm:col-start-4 sm:col-end-9 leading-7">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic opacity-80">
             Commodo nulla facilisi nullam vehicula accumsan lacus vel diam vel
             quam.
@@ -44,7 +44,7 @@ export const News3 = () => {
               <ColoredSocialMediaIcons />
             </div>
           </div>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             In hendrerit gravida rutrum quisque non. Sit amet luctus venenatis
             lectus. Sagittis nisl rhoncus mattis rhoncus urna. Velit dignissim
             sodales ut eu sem integer. Sollicitudin nibh sit amet commodo nulla
@@ -54,7 +54,7 @@ export const News3 = () => {
             gravida arcu ac tortor dignissim convallis aenean et. Quis blandit
             turpis cursus in hac habitasse.
           </p>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Phasellus egestas tellus rutrum tellus pellentesque eu. Egestas
             tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. In
             ornare quam viverra orci sagittis. Neque volutpat ac tincidunt vitae
@@ -67,7 +67,7 @@ export const News3 = () => {
           <h4 className="text-3xl mt-7 mb-7">
             A erat nam at lectus urna duis convallis.
           </h4>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Nisi scelerisque eu ultrices vitae auctor eu augue ut. Nibh cras
             pulvinar mattis nunc sed blandit. A diam maecenas sed enim. Ut enim
             blandit volutpat maecenas volutpat blandit aliquam etiam. Platea
@@ -79,7 +79,7 @@ export const News3 = () => {
               pulvinar etiam non quam lacus:
             </span>
           </p>
-          <ul className="text-xl flex flex-col gap-4 list-disc pl-5 mb-7">
+          <ul className="text-lg sm:text-xl flex flex-col gap-4 list-disc pl-5 mb-7">
             <li>Justo donec enim diam vulputate ut pharetra.</li>
             <li>Ullamcorper a lacus vestibulum sed arcu non odio.</li>
             <li>
@@ -90,7 +90,7 @@ export const News3 = () => {
               Ligula ullamcorper malesuada proin libero nunc consequat interdum.
             </li>
           </ul>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Lectus arcu bibendum at varius vel pharetra vel turpis nunc.
             Ultrices neque ornare aenean euismod elementum. Dui id ornare arcu
             odio ut sem nulla pharetra. Non sodales neque sodales ut etiam sit
@@ -103,7 +103,7 @@ export const News3 = () => {
           <h4 className="text-3xl mt-7 mb-7 font-IBMSerifBoldItalic">
             Magna fringilla urna porttitor rhoncus.
           </h4>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices.
             Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis
             a. Enim facilisis gravida neque convallis a cras semper. Eget arcu
@@ -112,7 +112,7 @@ export const News3 = () => {
             Volutpat est velit egestas dui id ornare arcu odio. Sed sed risus
             pretium quam.
           </p>
-          <p className="text-xl leading-7 mb-7">
+          <p className="text-lg sm:text-xl leading-7 mb-7">
             Donec ac odio tempor orci dapibus ultrices. Integer quis auctor elit
             sed vulputate mi sit amet. Sollicitudin ac orci phasellus egestas
             tellus. Potenti nullam ac tortor vitae purus. Risus feugiat in ante
