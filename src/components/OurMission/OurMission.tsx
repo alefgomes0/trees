@@ -58,7 +58,7 @@ export const OurMission = () => {
                 handleOnClick();
               }}
             />
-            <h5 className="text-xs font-IBMSansLight sm:w-[40%] leading-4">
+            <h5 className="text-xs sm:text-sm font-IBMSansLight sm:w-[40%] leading-4">
               Diam sollicitudin tempor id eu nisl nunc mi. Nunc mattis enim ut
               tellus elementum sagittis. Faucibus in ornare quam viverra orci
               sagittis.
@@ -75,7 +75,7 @@ export const OurMission = () => {
                 handleOnClick();
               }}
             />
-            <h5 className="text-xs font-IBMSansLight w-[70%] sm:w-[40%] leading-4">
+            <h5 className="text-xs sm:text-sm font-IBMSansLight w-[70%] sm:w-[40%] leading-4">
               Eget nunc lobortis mattis aliquam faucibus purus in massa. Et
               ultrices neque ornare aenean euismod.
             </h5>
@@ -91,7 +91,7 @@ export const OurMission = () => {
                 handleOnClick();
               }}
             />
-            <h5 className="text-xs font-IBMSansLight w-[55%] sm:w-[40%] leading-4 mr-2">
+            <h5 className="text-xs sm:text-sm font-IBMSansLight w-[55%] sm:w-[40%] leading-4 mr-2">
               Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
             </h5>
           </div>
