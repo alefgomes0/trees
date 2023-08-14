@@ -19,7 +19,7 @@ export const Idk = () => {
         } bg-cover bg-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]`}
       />
       <div className="flex flex-col gap-6 self-start sm:mt-[64px]">
-        <h2 className="font-[#031206] text-xl sm:text-5xl opacity-75 font-IBMSerifMedium">
+        <h2 className="font-[#031206] text-2xl sm:text-5xl opacity-75 font-IBMSerifMedium">
           More wildfires are ravaging the world — and they are getting worse
         </h2>
         <h4 className="font-[#031206] sm:text-lg leading-8 opacity-50">

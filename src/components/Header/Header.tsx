@@ -65,7 +65,7 @@ export const Header = () => {
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] p-2 sm:px-16">
           <div className="h-[30px] text-sm self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2">
             {isMobile ? (
-              <div className="flex items-center h-full">
+              <div className="flex items-center h-full pl-2">
                 <SocialMediaIcons />
               </div>
             ) : (
@@ -80,23 +80,23 @@ export const Header = () => {
           </div>
           <nav className="text-white flex justify-center gap-2 sm:gap-4 row-start-1 row-end-2 col-start-1 col-end-2 items-center">
             <Link to="/">
-              <h5 className="text-xs sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
+              <h5 className="text-sm sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
                 Home
               </h5>
             </Link>
             <Link to="/news/1">
-              <h5 className="text-xs sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
+              <h5 className="text-sm sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
                 News
               </h5>
             </Link>
             <Link to="/wildfiretracker">
-              <h5 className="text-xs sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
+              <h5 className="text-sm sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400">
                 Wildfire Tracker
               </h5>
             </Link>
           </nav>
           <div className="grid justify-end row-start-1 row-end-2 col-start-1 col-end-2 pointer-events-none">
-            {isMobile ? <SearchIcon translate="transalte-x-[-250%]"/> : <SocialMediaIcons />}
+            {isMobile ? <SearchIcon translate="translate-x-[-110%] translate-y-[25%]"/> : <SocialMediaIcons />}
           </div>
         </div>
       </div>

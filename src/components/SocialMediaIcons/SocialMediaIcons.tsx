@@ -1,13 +1,6 @@
-import { ReactNode } from "react";
-
-type SocialMediaIconsProps = {
-  children?: ReactNode;
-};
-
-export const SocialMediaIcons = (props?: SocialMediaIconsProps) => {
+export const SocialMediaIcons = () => {
   return (
     <div className="flex items-center justify-center gap-1 pr-2">
-      {props?.children}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
