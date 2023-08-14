@@ -6,11 +6,11 @@ export const News2 = () => {
   return (
     <>
       <main className="grid grid-rows-[1fr_auto] sm:grid-rows-1 sm:grid-cols-12 mt-8 sm:mt-32 mb-8 sm:mb-32 px-2 sm:px-0">
-        <article className="sm:col-start-4 sm:col-end-9 leading-7 ">
+        <article className="sm:col-start-4 sm:col-end-9 leading-7">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic opacity-80">
             Viverra vitae congue eu consequat ac felis donec.
           </h3>
-          <h4 className="text-xl mb-14">
+          <h4 className="text-xl mb-10 sm:mb-14">
             Eget egestas purus viverra accumsan in nisl nisi scelerisque eu.
             Porttitor massa id neque aliquam.
           </h4>
@@ -19,7 +19,7 @@ export const News2 = () => {
             src="/images/joanne-francis-S9NQnIV4zOI-unsplash.jpg"
             alt="a forest with a lot of fire smoke"
           />
-          <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
+          <figcaption className="text-sm opacity-75 pt-1 pb-2 sm:pb-4 font-IBMSansLight">
             Photo by{" "}
             <a href="https://unsplash.com/pt-br/@nipawinnews?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               Joanne Francis
@@ -29,8 +29,8 @@ export const News2 = () => {
               Unsplash
             </a>
           </figcaption>
-          <hr className="border-[#00851f] mb-10" />
-          <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
+          <hr className="border-[#00851f] mb-4 sm:mb-10" />
+          <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 sm:mb-10">
             <h4 className="font-IBMMonoSemibold opacity-90">
               BY <span className="text-sm">MALESUDA BIBENDUM</span>
             </h4>

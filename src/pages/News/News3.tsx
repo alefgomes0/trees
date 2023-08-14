@@ -11,7 +11,7 @@ export const News3 = () => {
             Commodo nulla facilisi nullam vehicula accumsan lacus vel diam vel
             quam.
           </h3>
-          <h4 className="text-xl mb-14">
+          <h4 className="text-xl mb-10 sm:mb-14">
             Malesuada fames ac turpis egestas sed tempus urna. Scelerisque eu
             ultrices vitae auctor. In hendrerit gravida rutrum quisque non
             tellus orci ac auctor.
@@ -21,7 +21,7 @@ export const News3 = () => {
             src="/images/ross-stone-KWYTn9_QKRE-unsplash.jpg"
             alt="a wildfire at california"
           />
-          <figcaption className="text-sm opacity-75 pt-1 pb-4 font-IBMSansLight">
+          <figcaption className="text-sm opacity-75 pt-1 pb-2 sm:pb-4 font-IBMSansLight">
             Photo by{" "}
             <a href="https://unsplash.com/pt-br/@rs2photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               Ross Stone
@@ -31,8 +31,8 @@ export const News3 = () => {
               Unsplash
             </a>
           </figcaption>
-          <hr className="border-[#00851f] mb-10" />
-          <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 mb-10">
+          <hr className="border-[#00851f] mb-4 sm:mb-10" />
+          <div className="grid grid-cols-2 grid-rows-2 gap-1 items-center pb-6 sm:mb-10">
             <h4 className="font-IBMMonoSemibold opacity-90">
               BY{" "}
               <span className="text-sm font-IBMMonoSemibold">FELIS DONEC</span>

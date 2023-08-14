@@ -1,3 +1,4 @@
+import { MapLibreGL } from 'maplibre-gl';
 import { NavigationControl } from 'react-map-gl';
 import Map from "react-map-gl/maplibre";
 import 'maplibre-gl/dist/maplibre-gl.css';
@@ -12,12 +13,13 @@ type WorldMapProps = {
 export const WorldMap = (props:WorldMapProps) => {
   return (
     <Map
+    mapLib={MapLibreGL}
       initialViewState={{
-        longitude: -122.4,
-        latitude: 37.8,
+        longitude: 0,
+        latitude: 0,
         zoom: 2,
       }}
-      style={{ width: "100%", height: "50vw" }}
+      style={{ width: "90vw", height: "50vh" }}
       mapStyle="https://api.maptiler.com/maps/basic-v2/style.json?key=ZliihbZlV2InCpPBQDa1"
     >
       <NavigationControl position='top-right'/>

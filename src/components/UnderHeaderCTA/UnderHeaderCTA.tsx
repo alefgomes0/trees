@@ -5,7 +5,7 @@ export const UnderHeaderCTA = () => {
   return (
     <div className="absolute w-[100%] w-max flex flex-col items-center justify-items-center justify-center gap-3 sm:gap-4 self-end justify-self-center h-min text-white px-2 py-2 bg-gradient-to-b from-[rgba(0,0,0,0.15)] to-[rgba(0,0,0,0.25)]">
       <h3 className="text-[1.5rem] sm:text-4xl font-IBMSerifMedium">SOME THINGS CANNOT WAIT</h3>
-      <h4 className="w-[75%] opacity-90 text-xs">
+      <h4 className="w-[60%] sm:w-[75%] opacity-90 text-xs">
         There is a rapidly closing window of opportunity to secure a liveable
         and sustainable future for all.{" "}
       </h4>

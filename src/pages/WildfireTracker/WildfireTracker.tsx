@@ -50,8 +50,8 @@ export const WildfireTracker = () => {
   }, [wildfireQuantity]);
 
   return (
-    <div className="bg-[#e3ede6] p-16">
-      <div className="py-8  text-xl">
+    <div className="h-max sm:h-[calc(100svh-120px)]  bg-[#e3ede6] p-2 sm:py-4 sm:px-16">
+      <div className="text-base sm:text-xl pb-4">
         <h3 className="mb-4">
           Our{" "}
           <span className="font-[IBMSansSemibold] opacity-80">
