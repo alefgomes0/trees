@@ -6,7 +6,7 @@ import { scrollToTop } from "../../utilities/ScrollToTop";
 export const OurMission = () => {
   const [showFullscreen, setShowFullscreen] = useState(false);
   const [selectImage, setSelectImage] = useState<number | null>(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
+  const isDesktop = window.innerWidth > 770
   const handleOnClick = () => {
     setShowFullscreen(!showFullscreen);
   };
@@ -36,7 +36,7 @@ export const OurMission = () => {
               due to the climate crisis and changes in land use
             </h4>
           </div>
-          {!isMobile && (
+          {!isDesktop && (
             <Link
               to="/wildfiretracker"
               className="text-xl sm:text-2xl font-IBMSansLight underline underline-offset-4 decoration-sky-500 "
@@ -96,7 +96,7 @@ export const OurMission = () => {
             </h5>
           </div>
         </div>
-        {isMobile && (
+        {isDesktop && (
           <Link
             to="/wildfiretracker"
             className="text-xl sm:text-2xl mb-4 font-IBMSansLight underline underline-offset-4 decoration-sky-500 "
