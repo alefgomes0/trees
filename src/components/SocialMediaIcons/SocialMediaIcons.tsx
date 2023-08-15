@@ -1,12 +1,18 @@
-export const SocialMediaIcons = () => {
+type SocialMediaIconsProps = {
+  width: string
+  height: string
+  gap: number
+}
+
+export const SocialMediaIcons = (props: SocialMediaIconsProps) => {
   return (
-    <div className="flex items-center justify-center gap-1 pr-2">
+    <div className={`flex items-center justify-center gap-${props.gap} pr-2`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width={`${props.width}`}
+        height={`${props.height}`}
         viewBox="0 0 14 14"
-        className="cursor-pointer"
+        className="cursor-pointer pointer-events-auto"
       >
         <path
           fill="currentColor"
@@ -16,10 +22,10 @@ export const SocialMediaIcons = () => {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width={`${props.width}`}
+        height={`${props.height}`}
         viewBox="0 0 20 20"
-        className="cursor-pointer"
+        className="cursor-pointer pointer-events-auto"
       >
         <path
           fill="currentColor"
@@ -28,10 +34,10 @@ export const SocialMediaIcons = () => {
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width={`${props.width}`}
+        height={`${props.height}`}
         viewBox="0 0 24 24"
-        className="cursor-pointer"
+        className="cursor-pointer pointer-events-auto"
       >
         <g fill="none">
           <g clipPath="url(#akarIconsFacebookFill0)">

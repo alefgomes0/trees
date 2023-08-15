@@ -14,7 +14,7 @@ export const Idk = () => {
         }`}
         alt="some trees"
         className={`col-start-1 col-end-2 w-full sm:w-[500px] h-full sm:h-[500px] sm:mt-[70px] self-start ${
-          !isDesktop ? "w-full rounded aspect-[7/5,2]" : "rounded-[50%]"
+          !isDesktop ? "w-full rounded-xl aspect-[7/5,2]" : "rounded-[50%]"
         } bg-cover bg-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]`}
       />
       <div className="flex flex-col gap-6 self-start sm:mt-[64px]">
