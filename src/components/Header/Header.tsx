@@ -4,11 +4,13 @@ import { SocialMediaIcons } from "../SocialMediaIcons/SocialMediaIcons";
 import { Hamburger } from "../Hamburger/Hamburger";
 import { useState, useRef } from "react";
 import { SearchIcon } from "../svg/SearchIcon";
-import { getWindowSize } from "../context/WindowSizeContext";
 
-export const Header = () => {
+type HeaderProps = {
+  isDesktop: boolean
+}
+
+export const Header = (props: HeaderProps) => {
   const [isVisible, setIsVisible] = useState(false);
-  const { isMobile } = getWindowSize();
   const divRef = useRef<HTMLDivElement>(null!);
   const svgRef = useRef<SVGSVGElement>(null!);
   const handleClick = (e: React.MouseEvent | MouseEvent) => {
@@ -64,7 +66,7 @@ export const Header = () => {
         </div>
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] p-2 md:px-16">
           <div className="h-[30px] text-sm self-start justify-self-start row-start-1 row-end-2 col-start-1 col-end-2">
-            {isMobile ? (
+            {!props.isDesktop ? (
               <div className="flex items-center h-full pl-2">
                 <SocialMediaIcons />
               </div>
@@ -80,23 +82,23 @@ export const Header = () => {
           </div>
           <nav className="text-white flex justify-center gap-2 sm:gap-4 row-start-1 row-end-2 col-start-1 col-end-2 items-center pointer-events-none">
             <Link to="/">
-              <h5 className="text-sm sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
+              <h5 className="text-xs sm:text-sm lg:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
                 Home
               </h5>
             </Link>
             <Link to="/news/1">
-              <h5 className="text-sm sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
+              <h5 className="text-xs sm:text-sm lg:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
                 News
               </h5>
             </Link>
             <Link to="/wildfiretracker">
-              <h5 className="text-sm sm:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
-                Wildfire Tracker
+              <h5 className="text-xs sm:text-sm lg:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
+                {!props.isDesktop ? "Tracker": "Wildfire Tracker"}
               </h5>
             </Link>
           </nav>
           <div className="grid justify-end row-start-1 row-end-2 col-start-1 col-end-2 pointer-events-none">
-            {isMobile ? <SearchIcon translate="translate-x-[-110%] translate-y-[25%]"/> : <SocialMediaIcons />}
+            {!props.isDesktop ? <SearchIcon translate="translate-x-[-110%] translate-y-[25%]"/> : <SocialMediaIcons />}
           </div>
         </div>
       </div>

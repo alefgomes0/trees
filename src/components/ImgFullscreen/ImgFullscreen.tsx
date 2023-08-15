@@ -49,7 +49,7 @@ export const ImgFullscreen = (props: ImgFullscreenProps) => {
         <div className="w-full h-full bg-[#C9D9CD] opacity-90 absolute top-0 left-0" />
         <div className="relative" ref={divRef2}>
           <img
-            className={`w-[${props.width}px] h-[${props.height}px] top-50 z-25 opacity-100 bg-[#272b28] p-3 rounded`}
+            className={`w-[${props.width}px] h-[${props.height}px] top-50 z-25 opacity-100 bg-[#272b28] p-3 rounded z-[999]`}
             key={props.path}
             src={props.path}
             alt={props.alt}
@@ -59,7 +59,7 @@ export const ImgFullscreen = (props: ImgFullscreenProps) => {
             width="50"
             height="50"
             viewBox="0 0 50 50"
-            className="absolute top-0 right-0 translate-y-[-100%] translate-x-full cursor-pointer"
+            className="absolute top-0 right-0 translate-y-[-100%] lg:translate-x-full cursor-pointer"
             onClick={handleCloseAnimation}
           >
             <path
