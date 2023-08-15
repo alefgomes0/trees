@@ -6,7 +6,7 @@ export const Idk = () => {
   const { isMobile } = getWindowSize();
 
   return (
-    <div className="h-max grid sm:grid-cols-[auto_1fr] grid-rows-1 bg-[#e3ede6] gap-2 sm:gap-8 items-center pt-4 px-2 sm:px-16">
+    <div className="h-max grid lg:grid-cols-[auto_1fr] grid-rows-1 bg-[#e3ede6] gap-2 sm:gap-8 items-center pt-4 px-2 sm:px-16">
       <img
         src={`${
           isMobile

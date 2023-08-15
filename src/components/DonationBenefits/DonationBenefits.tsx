@@ -5,7 +5,7 @@ import { SmallPlant } from "../svg/SmallPlant";
 
 export const DonationBenefits = () => {
   return (
-    <div className="grid grid-rows-3 sm:grid-rows-1 grid-cols-1 sm:grid-cols-3 font-IBMSansLight gap-2 sm:gap-6 lg:gap-16">
+    <div className="grid grid-rows-3 sm:grid-rows-1 grid-cols-1 sm:grid-cols-3 font-IBMSansLight gap-6 lg:gap-16">
       <div className="rounded text-gwhite grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10% to-[rgba(50,88,98,1)] to-90%">
         <div className="flex gap-2">
           <div className="flex flex-col">
@@ -39,7 +39,7 @@ export const DonationBenefits = () => {
           </div>
         </div>
       </div>
-      <div className="rounded text-gwhite grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10% to-[rgba(50,88,98,1)] to-90%">
+      <div className="relative rounded text-gwhite grid grid-cols-1 auto-rows-min gap-5 p-5 shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] bg-gradient-to-b from-[rgba(61,104,115,1)] from-10% to-[rgba(50,88,98,1)] to-90%">
         <div className="flex gap-2">
           <div className="flex flex-col">
             <h4 className="text-4xl font-IBMSerifLight">Ultra</h4>
@@ -69,6 +69,9 @@ export const DonationBenefits = () => {
           <div className="flex items-center pb-2 gap-2">
             <Checkmark />
             <h4>Elementum eu facilisis sed</h4>
+          </div>
+          <div className="absolute top-0 right-0 translate-y-[-50%] bg-[#00851f] px-1 rounded">
+            <h4 className="text-white">POPULAR</h4>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export const Newsletter = () => {
             <h4 className="text-2xl sm:text-4xl text-white font-IBMSerifMedium">
               Sign our newsletter
             </h4>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col gap-4">
               <div className="flex flex-col">
                 <label htmlFor="name" className="text-white pb-1">
                   Name

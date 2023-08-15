@@ -13,9 +13,9 @@ export const OurMission = () => {
 
   return (
     <>
-      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-1 sm:grid-cols-[2fr_3fr] gap-10 sm:gap-16 bg-[#bddbc6] h-min px-2 sm:px-16 pt-8 sm:mt-16 font-gblack">
-        <div className="grid col-start-1 cold-end-2 sm:mt-16 gap-4 sm:gap-1 ">
-          <h3 className="font-IBMSerifMedium text-3xl sm:text-5xl font-gblack opacity-80">
+      <div className="grid grid-rows-[auto_auto_1fr] grid-cols-1 sm:grid-cols-[2fr_3fr] gap-10 md:gap-6 lg:gap-16 bg-[#bddbc6] h-min px-2 sm:px-16 pt-8 sm:mt-16 font-gblack">
+        <div className="grid col-start-1 cold-end-2 sm:mt-16 gap-4">
+          <h3 className="font-IBMSerifMedium text-3xl sm:text-5xl md:text-3xl lg:text-5xl font-gblack opacity-80">
             WE HAVE A MISSION
           </h3>
           <div>
