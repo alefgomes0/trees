@@ -17,9 +17,9 @@ export const WorldMap = (props:WorldMapProps) => {
       initialViewState={{
         longitude: 0,
         latitude: 0,
-        zoom: 1,
+        zoom: 2,
       }}
-      style={{ width: "90vw", height: "50vh" }}
+      style={{ width: "100%", height: "50vh" }}
       mapStyle="https://api.maptiler.com/maps/basic-v2/style.json?key=ZliihbZlV2InCpPBQDa1"
     >
       <NavigationControl position='top-right'/>

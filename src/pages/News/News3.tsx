@@ -5,7 +5,7 @@ import { TopNews } from "../../components/TopNews/TopNews";
 export const News3 = () => {
   return (
     <>
-      <main className="grid grid-rows-[1fr_auto] sm:grid-rows-1 sm:grid-cols-12 mt-8 sm:mt-32 mb-8 sm:mb-32 px-2 sm:px-0">
+      <main className="grid grid-rows-[1fr_auto] grid-cols-1 lg:grid-rows-1 lg:grid-cols-12 mt-8 sm:mt-32 mb-8 sm:mb-32 px-2 sm:px-16 lg:px-0">
         <article className="sm:col-start-4 sm:col-end-9 leading-7">
           <h3 className="text-5xl font-semibold pb-6 font-IBMSerifBoldItalic opacity-80">
             Commodo nulla facilisi nullam vehicula accumsan lacus vel diam vel
