@@ -9,6 +9,7 @@ import { News2 } from "./pages/News/News2.tsx";
 import { Donate } from "./pages/Donate/Donate.tsx";
 import { ArrowUp } from "./components/svg/ArrowUp.tsx";
 import { WildfireTracker } from "./pages/WildfireTracker/WildfireTracker.tsx";
+import { NoMatch } from "./pages/NoMatch/NoMatch.tsx";
 
 const App = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770);
@@ -36,11 +37,10 @@ const App = () => {
           <Route path="/news/3" element={<News3 />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/wildfiretracker" element={<WildfireTracker />} />
+          <Route path="*" element={<NoMatch />} />
         </Routes>
         <ArrowUp />
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -52,7 +52,7 @@ export const WildfireTracker = () => {
   return (
     <div className="h-screen sm:h-[calc(100svh-120px)] bg-[#e3ede6] p-2 md:py-4 px-2 md:px-16">
       <div className="text-base sm:text-xl pb-4">
-        <h3 className="mb-4">
+        <h3 className="mb-4 lg:w-[50%]">
           Our{" "}
           <span className="font-[IBMSansSemibold] opacity-80">
             Wildfire Tracker
