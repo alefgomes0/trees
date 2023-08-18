@@ -3,11 +3,10 @@ import { SocialMediaIcons } from "../SocialMediaIcons/SocialMediaIcons";
 type HamburgerProps = {
   isVisible: boolean;
   hide: (item: boolean) => void;
+  isDesktop: boolean
 };
 
 export const Hamburger = (props: HamburgerProps) => {
-  const isDesktop = window.innerWidth > 770;
-
   return (
     <div
       className={`fixed z-20 opacity-[95%] top-0 right-0 grid grid-cols-1 grid-rows-1 h-[100svh] w-[75vw] md:w-[50vw] bg-gradient-to-b from-gray-100 to-gray-500 ${
@@ -28,7 +27,7 @@ export const Hamburger = (props: HamburgerProps) => {
         <h4 className="text-base cursor-pointer underline underline-offset-4 underline-sky-400 mb-4">
           Link 4
         </h4>
-        {!isDesktop ? (
+        {!props.isDesktop ? (
           <>
             <hr />
             <div className="justify-self-start">

@@ -5,14 +5,25 @@ import { Hamburger } from "../Hamburger/Hamburger";
 import { useState, useRef, useEffect } from "react";
 import { SearchIcon } from "../svg/SearchIcon";
 
-type HeaderProps = {
-  isDesktop: boolean;
-};
 
-export const Header = (props: HeaderProps) => {
+
+export const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
   const divRef = useRef<HTMLDivElement>(null!);
   const svgRef = useRef<SVGSVGElement>(null!);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 770);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -65,7 +76,7 @@ export const Header = (props: HeaderProps) => {
                 d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"
               />
             </svg>
-            <Hamburger isVisible={isVisible} hide={setIsVisible} />
+            <Hamburger isVisible={isVisible} hide={setIsVisible} isDesktop={isDesktop}/>
           </div>
         </div>
         <div className="h-[40px] bg-[#00851f] opacity-70 grid grid-rows-[minmax(40px, 40px)] grid-cols-1 content-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)] p-2 md:px-16">
@@ -82,11 +93,11 @@ export const Header = (props: HeaderProps) => {
             </Link>
             <Link to="/wildfiretracker">
               <h5 className="text-lg lg:text-base cursor-pointer hover:underline underline-offset-4 decoration-sky-400 pointer-events-auto">
-                {!props.isDesktop ? "Tracker" : "Wildfire Tracker"}
+                {!isDesktop ? "Tracker" : "Wildfire Tracker"}
               </h5>
             </Link>
           </nav>
-          {!props.isDesktop ? (
+          {!isDesktop ? (
             <></>
           ) : (
             <>

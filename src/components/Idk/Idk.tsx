@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../../utilities/ScrollToTop";
 
-export const Idk = () => {
-  const isDesktop = window.innerWidth > 770
+type IdkProps = {
+  isDesktop: boolean
+}
 
+export const Idk = (props: IdkProps) => {
   return (
     <div className="h-max grid lg:grid-cols-[auto_1fr] grid-rows-1 bg-[#e3ede6] gap-2 sm:gap-8 items-center pt-4 px-2 sm:px-16">
       <img
         src={`${
-          !isDesktop
+          !props.isDesktop
             ? "/images/undraw_Walking_outside_re_56xo.png"
             : "/images/undraw_nature_m5ll.png"
         }`}
         alt="some trees"
         className={`col-start-1 col-end-2 w-full sm:w-[500px] h-full sm:h-[500px] sm:mt-[70px] self-start ${
-          !isDesktop ? "w-full rounded-xl aspect-[7/5,2]" : "rounded-[50%]"
+          !props.isDesktop ? "w-full rounded-xl aspect-[7/5,2]" : "rounded-[50%]"
         } bg-cover bg-center shadow-[0_3px_3px_0_rgba(0,0,0,0.3)]`}
       />
       <div className="flex flex-col gap-6 self-start sm:mt-[64px]">
