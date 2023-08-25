@@ -20,7 +20,7 @@ export const WorldMap = (props:WorldMapProps) => {
         zoom: 2,
       }}
       style={{ width: "100%", height: "50vh" }}
-      mapStyle="https://api.maptiler.com/maps/basic-v2/style.json?key=ZliihbZlV2InCpPBQDa1"
+      mapStyle={`https://api.maptiler.com/maps/basic-v2/style.json?key=${import.meta.env.VITE_MAPTILLER_API_KEY}`}
     >
       <NavigationControl position='top-right'/>
       <Markers wildfireData={props.wildfireData} wildfireQuantity={props.wildfireQuantity}/>
